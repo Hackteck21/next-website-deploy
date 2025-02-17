@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faRectangleList,
   faSackDollar,
-  faMoneyBillTransfer,
   faMoneyBillTrendUp,
 } from "@fortawesome/free-solid-svg-icons";
 
