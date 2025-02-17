@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <head>
+      <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -35,7 +35,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
           rel="stylesheet"
         />
-      </head> */}
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
