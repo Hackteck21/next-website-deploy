@@ -2,12 +2,39 @@
   background-color: #17141f;
   width: 100%;
 }
+
 .banner {
-  background: url("https://biztech-taupe.vercel.app/assets/images/background/page-title.jpg");
-  height: 400px;
   width: 100%;
-  background-color: #17141f;
-  opacity: 0.5;
   background-repeat: no-repeat;
+  background: url("https://biztech-taupe.vercel.app/assets/images/background/page-title.jpg");
+  opacity: 0.4;
+  padding: 200px 0;
 }
 
+.header_nav {
+  font-size: 17px;
+  font-weight: 500;
+  color: #222;
+  font-family: "Roboto", serif;
+  line-height: 30px;
+}
+
+.boxshow_card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.reason_bg {
+  background: linear-gradient(90deg, hsla(0, 0%, 85%, 0) 48.44%, #d9d9d9);
+  position: relative;
+}
+.left_side_reason {
+  height: 400px;
+  width: 100%;
+  background: url("https://biztech-taupe.vercel.app/assets/images/background/chooseus-bg-2.jpg");
+}
+
+.banner_2{
+  background: linear-gradient(90deg, hsla(0, 0%, 85%, 0) 48.44%, #d9d9d9);
+  position: relative;
+  height: 400px;
+}
