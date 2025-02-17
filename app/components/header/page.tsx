@@ -60,7 +60,7 @@ const page = () => {
             </div>
 
             <div
-              className={`${Styles.boxshow_card} absolute right-2 bottom-[-80px] rounded-md bg-white p-[20px] shadow-custom-light`}
+              className={`${Styles.boxshow_card} absolute right-2 bottom-[-80px] rounded-md bg-white p-[20px]`}
             >
               <div className=" bg-red-700 rounded-[50%] absolute top-[-44px] left-[-32px] p-[15px] text-white">
                 <div className=" h-[42px] w-[42px]">
@@ -87,7 +87,7 @@ const page = () => {
             </div>
 
             <div
-              className={`${Styles.boxshow_card} absolute right-2 bottom-[-80px] rounded-md bg-white p-[20px] shadow-custom-light`}
+              className={`${Styles.boxshow_card} absolute right-2 bottom-[-80px] rounded-md bg-white p-[20px] `}
             >
               <div className=" bg-red-700 rounded-[50%] absolute top-[-44px] left-[-32px] p-[15px] text-white">
                 <div className=" h-[42px] w-[42px]">
@@ -114,7 +114,7 @@ const page = () => {
             </div>
 
             <div
-              className={`${Styles.boxshow_card} absolute right-2 bottom-[-80px] rounded-md bg-white p-[20px] shadow-custom-light`}
+              className={`${Styles.boxshow_card} absolute right-2 bottom-[-80px] rounded-md bg-white p-[20px] `}
             >
               <div className=" bg-red-700 rounded-[50%] absolute top-[-44px] left-[-32px] p-[15px] text-white">
                 <div className=" h-[42px] w-[42px]">
@@ -143,7 +143,7 @@ const page = () => {
             </div>
 
             <div
-              className={`${Styles.boxshow_card} absolute right-2 bottom-[-80px] rounded-md bg-white p-[20px] shadow-custom-light`}
+              className={`${Styles.boxshow_card} absolute right-2 bottom-[-80px] rounded-md bg-white p-[20px] `}
             >
               <div className=" bg-red-700 rounded-[50%] absolute top-[-44px] left-[-32px] p-[15px] text-white">
                 <div className=" h-[42px] w-[42px]">
@@ -170,7 +170,7 @@ const page = () => {
             </div>
 
             <div
-              className={`${Styles.boxshow_card} absolute right-2 bottom-[-80px] rounded-md bg-white p-[20px] shadow-custom-light`}
+              className={`${Styles.boxshow_card} absolute right-2 bottom-[-80px] rounded-md bg-white p-[20px] `}
             >
               <div className=" bg-red-700 rounded-[50%] absolute top-[-44px] left-[-32px] p-[15px] text-white">
                 <div className=" h-[42px] w-[42px]">
@@ -196,7 +196,7 @@ const page = () => {
               />
             </div>
             <div
-              className={`${Styles.boxshow_card} absolute right-2 bottom-[-80px] rounded-md bg-white p-[20px] shadow-custom-light`}
+              className={`${Styles.boxshow_card} absolute right-2 bottom-[-80px] rounded-md bg-white p-[20px] `}
             >
               <div className=" bg-red-700 rounded-[50%] absolute top-[-44px] left-[-32px] p-[15px] text-white">
                 <div className=" h-[42px] w-[42px]">
