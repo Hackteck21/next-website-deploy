@@ -2,12 +2,12 @@ import Image from "next/image";
 import React from "react";
 import Styles from "../../styles/header.module.css";
 import service1 from "../../assets/images/service-1.jpg";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faRectangleList,
-//   faSackDollar,
-//   faMoneyBillTrendUp,
-// } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faRectangleList,
+  faSackDollar,
+  faMoneyBillTrendUp,
+} from "@fortawesome/free-solid-svg-icons";
 
 const page = () => {
   return (
@@ -64,7 +64,7 @@ const page = () => {
             >
               <div className=" bg-red-700 rounded-[50%] absolute top-[-44px] left-[-32px] p-[15px] text-white">
                 <div className=" h-[42px] w-[42px]">
-                  {/* <FontAwesomeIcon icon={faRectangleList} /> */}
+                  <FontAwesomeIcon icon={faRectangleList} />
                 </div>
               </div>
               <div className=" font-bold text-[20px] mb-3 py-3">
@@ -91,7 +91,7 @@ const page = () => {
             >
               <div className=" bg-red-700 rounded-[50%] absolute top-[-44px] left-[-32px] p-[15px] text-white">
                 <div className=" h-[42px] w-[42px]">
-                  {/* <FontAwesomeIcon icon={faRectangleList} /> */}
+                  <FontAwesomeIcon icon={faRectangleList} />
                 </div>
               </div>
               <div className=" font-bold text-[20px] mb-3 py-3">
@@ -118,7 +118,7 @@ const page = () => {
             >
               <div className=" bg-red-700 rounded-[50%] absolute top-[-44px] left-[-32px] p-[15px] text-white">
                 <div className=" h-[42px] w-[42px]">
-                  {/* <FontAwesomeIcon icon={faSackDollar} /> */}
+                  <FontAwesomeIcon icon={faSackDollar} />
                 </div>
               </div>
               <div className=" font-bold text-[20px] mb-3 py-3">
@@ -147,7 +147,7 @@ const page = () => {
             >
               <div className=" bg-red-700 rounded-[50%] absolute top-[-44px] left-[-32px] p-[15px] text-white">
                 <div className=" h-[42px] w-[42px]">
-                  {/* <FontAwesomeIcon icon={faMoneyBillTrendUp} /> */}
+                  <FontAwesomeIcon icon={faMoneyBillTrendUp} />
                 </div>
               </div>
               <div className=" font-bold text-[20px] mb-3 py-3">
@@ -174,7 +174,7 @@ const page = () => {
             >
               <div className=" bg-red-700 rounded-[50%] absolute top-[-44px] left-[-32px] p-[15px] text-white">
                 <div className=" h-[42px] w-[42px]">
-                  {/* <FontAwesomeIcon icon={faRectangleList} /> */}
+                  <FontAwesomeIcon icon={faRectangleList} />
                 </div>
               </div>
               <div className=" font-bold text-[20px] mb-3 py-3">
@@ -200,7 +200,7 @@ const page = () => {
             >
               <div className=" bg-red-700 rounded-[50%] absolute top-[-44px] left-[-32px] p-[15px] text-white">
                 <div className=" h-[42px] w-[42px]">
-                  {/* <FontAwesomeIcon icon={faRectangleList} /> */}
+                  <FontAwesomeIcon icon={faRectangleList} />
                 </div>
               </div>
               <div className=" font-bold text-[20px] mb-3 py-3">
