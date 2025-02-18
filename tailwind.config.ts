@@ -11,6 +11,17 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customBlue: "#336aea",
+        customBrown: "#808287",
+      },
+      boxShadow: {
+        customeBrow: "0 10px 60px rgba(0, 0, 0, 0.1)",
+      },
+      padding: {
+        70: "70px !important",
+      },
+      margin: {
+        20: "-20px !important",
       },
     },
   },

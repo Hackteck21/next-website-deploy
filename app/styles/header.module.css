@@ -6,35 +6,51 @@
 .banner {
   width: 100%;
   background-repeat: no-repeat;
-  background: url("https://biztech-taupe.vercel.app/assets/images/background/page-title.jpg");
-  opacity: 0.4;
-  padding: 200px 0;
+  background: url("https://html.kodesolution.com/2024/sotech-php/images/main-slider/s1-1.jpg");
 }
 
-.header_nav {
-  font-size: 17px;
-  font-weight: 500;
-  color: #222;
-  font-family: "Roboto", serif;
-  line-height: 30px;
-}
-
-.boxshow_card {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.reason_bg {
-  background: linear-gradient(90deg, hsla(0, 0%, 85%, 0) 48.44%, #d9d9d9);
-  position: relative;
-}
-.left_side_reason {
-  height: 400px;
+.card_bg {
+  background: url("https://html.kodesolution.com/2024/sotech-php/images/icons/bg-shape-tm-1.png");
   width: 100%;
-  background: url("https://biztech-taupe.vercel.app/assets/images/background/chooseus-bg-2.jpg");
+  background-repeat: no-repeat !important;
+  background-position: center;
+  background-size: cover;
+  background-color: #f5f6f8;
 }
 
-.banner_{
-  background: linear-gradient(90deg, hsla(0, 0%, 85%, 0) 48.44%, #d9d9d9);
-  position: relative;
-  height: 400px;
+.auto_container {
+  position: static;
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+.card_custome {
+  padding: 30px;
+  background: url("https://html.kodesolution.com/2024/sotech-php/images/icons/shape-tm-1.png");
+}
+.card_img {
+  height: 50px;
+  width: 50px;
+  filter: brightness(0) saturate(100%) invert(41%) sepia(96%) saturate(4193%)
+    hue-rotate(214deg) brightness(97%) contrast(89%);
+}
+.banner_2 {
+  width: 100%;
+  background-repeat: no-repeat !important;
+  background-position: center;
+  background-size: cover;
+  background-color: #f5f6f8;
+  height: 500px;
+  background: url("https://html.kodesolution.com/2024/sotech-php/images/resource/about-1.jpg ");
+}
+.white_img {
+  height: 50px;
+  width: 50px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(14%) saturate(2%)
+    hue-rotate(165deg) brightness(106%) contrast(100%) !important;
+}
+
+.section_3 {
+  background: url("https://html.kodesolution.com/2024/sotech-php/images/icons/shape-tm-14-old.jpg");
 }
