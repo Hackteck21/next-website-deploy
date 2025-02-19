@@ -10,14 +10,14 @@ const Footer = () => {
           <div className={Styles.auto_container}>
             <div className="row">
               <div className="col-md-3 pb-[16px]">
-                <div className="">
+                <div>
                   <Image
                     src="https://uattfsec.truefinedge.com/image-pub/original.svg"
                     alt="logo"
                     width={200}
                     height={100}
                     priority
-                    className=" mt-[-18px]"
+                    className="mt-[-18px]"
                   />
                   <div className={Styles.footer_logo_info}>
                     We're a global team of strategic digital collaborating with
@@ -27,7 +27,7 @@ const Footer = () => {
               </div>
               <div className="col-md-3">
                 <div>
-                  <div className=" text-[18px] text-white font-bold border-b-2 border-cutomBorder pb-2">
+                  <div className="text-[18px] text-white font-bold border-b-2 border-cutomBorder pb-2">
                     Explore
                   </div>
                   <ul className={Styles.footer_list}>
