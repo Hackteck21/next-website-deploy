@@ -20,8 +20,8 @@ const Footer = () => {
                     className="mt-[-18px]"
                   />
                   <div className={Styles.footer_logo_info}>
-                    Were a global team of strategic digital collaborating with
-                    some of the worlds largest brands.
+                    {`We're a global team of strategic digital collaborating with 
+  some of the world's largest brands.`}
                   </div>
                 </div>
               </div>
