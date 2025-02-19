@@ -1,11 +1,6 @@
 import React from "react";
 import Styles from "../../../styles/header.module.css";
 
-import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import { About, Profile, Startup } from "@/app/Icons/IconsExport";
-
 const ProjectList = () => {
   return (
     <div>
