@@ -15,8 +15,6 @@ const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [projectDropDownOpen, setProjectDropDownOpen] = useState(false);
 
-  console.log("pathname", pathname);
-
   return (
     <div className={Styles.overall_header}>
       <div className={Styles.auto_container}>
