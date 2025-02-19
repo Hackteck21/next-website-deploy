@@ -1,3 +1,13 @@
+/* Default Color */
+
+.overall_header {
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 90px;
+}
 .overall_banner {
   background-color: #17141f;
   width: 100%;
@@ -53,4 +63,99 @@
 
 .section_3 {
   background: url("https://html.kodesolution.com/2024/sotech-php/images/icons/shape-tm-14-old.jpg");
+}
+
+.new_articles {
+  border: 1px solid #f4f5f8;
+}
+.new_articles img {
+  width: 100%;
+}
+.read_more {
+  background: #f4f5f8;
+  padding: 10px;
+  color: #676767;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* Header */
+/* .header_list li a {
+  color: #707070 ;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 16px;
+} */
+
+/* Footer */
+.footer {
+  padding: 80px;
+  background: url("https://html.kodesolution.com/2024/sotech-php/images/background/8.jpg");
+}
+.footer_list {
+  padding-left: 0 !important;
+}
+
+.footer_list li {
+  color: #8c8f94 !important;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.footer_logo_info {
+  padding: 10px 0;
+  line-height: 28px;
+  color: #8c8f94;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.it_solution {
+  background: url("https://html.kodesolution.com/2024/sotech-php/images/background/6.jpg");
+  padding: 80px 0;
+  background-repeat: no-repeat !important;
+  background-position: center;
+  background-size: cover;
+}
+.overall_border {
+  border: 1px solid #fff;
+  padding: 30px;
+  margin: 0 40px;
+}
+
+/* About Pages */
+
+.about_banner {
+  position: relative;
+  width: 100%;
+  min-height: 250px;
+  background-repeat: no-repeat;
+  background: url("https://html.kodesolution.com/2024/sotech-php/images/background/page-title.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0;
+}
+
+.about_banner:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(19, 19, 19, 0.8); /* Dark overlay without affecting text */
+  content: "";
+}
+
+.right_rotate {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.projects {
+  width: 100%;
+  position: relative;
+  background: url("https://html.kodesolution.com/2024/sotech-php/images/resource/project-1.jpg");
+  height: 500px;
 }
