@@ -12,7 +12,7 @@ const page = () => {
       <section className={Styles.about_banner}>
         <div className={Styles.auto_container}>
           <div className="text-[60px] font-extrabold text-white relative z-10">
-           Abouts
+            Abouts
           </div>
         </div>
       </section>
