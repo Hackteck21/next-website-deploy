@@ -64,7 +64,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-md-12 col-lg-6 col-sm-4">
+                  <div className="col-md-12 col-lg-6 col-sm-4 mb-4">
                     <div className={Styles.send_message}>
                       <button className=" uppercase">Send Message</button>
                     </div>

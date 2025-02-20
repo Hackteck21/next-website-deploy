@@ -13,6 +13,7 @@ import digitalMarketing from "./assets/images/social-media-marketing.png";
 import uidesign from "./assets/images/ui.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import "animate.css";
 
 export default function Home() {
   return (
@@ -28,7 +29,11 @@ export default function Home() {
             Innovative Tech <div className=" leading-[60px]">It Solution</div>
           </div>
           <div>
-            <button className="bg-customBlue py-3 px-5 font-bold text-[12px] uppercase text-white transition-all duration-300 ease-in-out transform hover:bg-btnHover hover:translate-y-1 shadow-md hover:shadow-lg">
+            <button
+              className="bg-customBlue py-3 px-5 font-bold text-[12px] uppercase text-white 
+              transition-all duration-300 ease-in-out transform hover:bg-btnHover hover:translate-y-1 shadow-md hover:shadow-lg 
+              animate__animated animate__fadeInUp animate__delay-1s"
+            >
               Explore More
             </button>
           </div>
@@ -37,7 +42,7 @@ export default function Home() {
       {/* Card Section */}
       <section className={Styles.card_bg}>
         <div className={Styles.auto_container}>
-          <div className="row row-cols-1 row-cols-sm-3 row-cols-lg-6 justify-content-center py-[40px] gap-4">
+          <div className="row row-cols-1 row-cols-sm-3 row-cols-lg-6 justify-content-center py-[40px] gap-4 animate__animated animate__fadeInUp animate__delay-1s">
             <div className="col-md-3 bg-white p-0 border-t-4 border-customBlue">
               <div className={Styles.card_custome}>
                 <div className=" flex justify-center pb-[30px]">
@@ -236,7 +241,7 @@ export default function Home() {
             </div>
           </div>
           <div className={Styles.auto_container}>
-            <div className="row pb-[60px]">
+            <div className="row pb-[60px] animate__animated animate__fadeInUp animate__delay-1s">
               <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                 <div className="text-white">
                   <div className=" border border-customBrown p-4 ">

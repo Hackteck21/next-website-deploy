@@ -141,7 +141,7 @@ const Header = () => {
 
                     <li className="relative border-b border-borderLight py-[6px]">
                       <Link
-                        href="/service"
+                        href="/pages/service/serviceList"
                         className="block px-4 py-2 text-gray-700 hover:hover:text-customBlue no-underline"
                       >
                         Service
@@ -160,10 +160,10 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/services"
+                  href="/pages/service/serviceList"
                   className={clsx(
                     "hover:text-customBlue no-underline",
-                    pathname === "/services"
+                    pathname === "/pages/service/serviceList"
                       ? "text-customBlue font-bold"
                       : "text-cutomText font-medium"
                   )}
@@ -171,19 +171,7 @@ const Header = () => {
                   Services
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/shop"
-                  className={clsx(
-                    "hover:text-customBlue no-underline",
-                    pathname === "/shop"
-                      ? "text-customBlue font-bold"
-                      : "text-cutomText font-medium"
-                  )}
-                >
-                  Shop
-                </Link>
-              </li>
+
               <li>
                 <Link
                   href="/pages/news"
