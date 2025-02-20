@@ -149,7 +149,7 @@ const Header = () => {
                     </li>
                     <li className="relative border-b border-borderLight py-[6px]">
                       <Link
-                        href="/service"
+                        href="/pages/testimonials"
                         className="block px-4 py-2 text-gray-700 hover:hover:text-customBlue no-underline"
                       >
                         Testimonial

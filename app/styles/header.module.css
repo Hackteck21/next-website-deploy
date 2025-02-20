@@ -290,3 +290,28 @@
   min-width: 77px;
   margin-bottom: 20px;
 }
+
+/* testimonials */
+.testimonials {
+  background-repeat: no-repeat !important;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  background: url("https://html.kodesolution.com/2024/sotech-php/images/icons/shape-12.png");
+}
+.testie_share {
+  background-color: #336aea;
+  position: absolute;
+  right: 0;
+  padding: 20px 15px;
+}
+
+.testi_border {
+  position: absolute;
+  left: 60px;
+  top: 100%;
+  border-right: 150px solid transparent;
+  border-top: 45px solid #222;
+  content: "";
+}
