@@ -120,7 +120,7 @@ const Header = () => {
                           </li>
                           <li className="relative  border-b border-borderLight py-[6px]">
                             <Link
-                              href="/pages/about"
+                              href="/pages/projects/projectDetails"
                               className="block px-4 py-2 text-gray-700 hover:text-customBlue no-underline"
                             >
                               Project Details
@@ -132,10 +132,10 @@ const Header = () => {
 
                     <li className="relative border-b border-borderLight py-[6px]">
                       <Link
-                        href="/service"
+                        href="/pages/team"
                         className="block px-4 py-2 text-gray-700 hover:hover:text-customBlue no-underline"
                       >
-                        Service
+                        Team
                       </Link>
                     </li>
 
@@ -144,7 +144,7 @@ const Header = () => {
                         href="/service"
                         className="block px-4 py-2 text-gray-700 hover:hover:text-customBlue no-underline"
                       >
-                        Team
+                        Service
                       </Link>
                     </li>
                     <li className="relative border-b border-borderLight py-[6px]">
@@ -186,10 +186,10 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/news"
+                  href="/pages/news"
                   className={clsx(
                     "hover:text-customBlue no-underline",
-                    pathname === "/news"
+                    pathname === "/pages/news"
                       ? "text-customBlue font-bold"
                       : "text-cutomText font-medium"
                   )}
@@ -199,10 +199,10 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="/pages/contact"
                   className={clsx(
                     "hover:text-customBlue no-underline",
-                    pathname === "/contact"
+                    pathname === "/pages/contact"
                       ? "text-customBlue font-bold"
                       : "text-cutomText font-medium"
                   )}

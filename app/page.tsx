@@ -28,7 +28,7 @@ export default function Home() {
             Innovative Tech <div className=" leading-[60px]">It Solution</div>
           </div>
           <div>
-            <button className=" bg-customBlue py-3 px-5 font-bold text-[12px] uppercase">
+            <button className="bg-customBlue py-3 px-5 font-bold text-[12px] uppercase text-white transition-all duration-300 ease-in-out transform hover:bg-btnHover hover:translate-y-1 shadow-md hover:shadow-lg">
               Explore More
             </button>
           </div>

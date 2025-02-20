@@ -38,13 +38,37 @@
 .card_custome {
   padding: 30px;
   background: url("https://html.kodesolution.com/2024/sotech-php/images/icons/shape-tm-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
 }
+
+.card_custome:hover {
+  background-color: #336aea;
+  color: #ffffff;
+  transform: translateY(0);
+}
+.card_custome * {
+  transition: all 0.3s ease-in-out;
+}
+
 .card_img {
   height: 50px;
   width: 50px;
+
   filter: brightness(0) saturate(100%) invert(41%) sepia(96%) saturate(4193%)
     hue-rotate(214deg) brightness(97%) contrast(89%);
+  transform: translateY(10px);
+  transition: filter 0.3s ease-in-out;
 }
+
+.card_custome:hover .card_img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(0deg) brightness(104%) contrast(101%);
+}
+
 .banner_2 {
   width: 100%;
   background-repeat: no-repeat !important;
@@ -127,7 +151,7 @@
   background: url("https://html.kodesolution.com/2024/sotech-php/images/background/page-title.jpg");
   background-size: cover;
   background-position: center;
-  padding: 140px 0;
+  padding: 90px 0;
 }
 
 .about_banner:before {
@@ -152,4 +176,117 @@
   position: relative;
   background: url("https://html.kodesolution.com/2024/sotech-php/images/resource/project-1.jpg");
   height: 500px;
+}
+
+.project_details {
+  display: flex;
+  padding-left: 0;
+}
+.project_details li {
+  padding: 4px;
+}
+.project_details li svg {
+  background: #222429;
+  border-radius: 50%;
+  padding: 10px;
+  color: #fff;
+}
+.project_details li svg:hover {
+  background-color: #336aea;
+  color: #fff;
+}
+
+.team_card {
+  position: absolute;
+  background: #fff;
+  bottom: -60px;
+  padding: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 30px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+  transition: all 300ms ease, transform 300ms ease; /* Smooth transition */
+}
+
+.team_card:hover {
+  transform: translateY(-10px); /* Moves up slightly on hover */
+  box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+.overall_team {
+  margin-top: 10px;
+  opacity: 0;
+  max-height: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 300ms ease, transform 300ms ease, visibility 300ms ease;
+}
+
+.team_card:hover .overall_team {
+  opacity: 1;
+  visibility: visible;
+  max-height: 100px;
+  transform: translateY(0);
+}
+
+.team_list {
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.team_list li {
+  padding: 4px;
+}
+.team_list li svg {
+  padding: 0 10px;
+  font-size: 18px;
+  color: #767676;
+}
+.team_list li svg:hover {
+  color: #336aea;
+  cursor: pointer;
+}
+
+.input_field {
+  border-radius: 10px;
+  height: calc(2.25rem + 27px);
+  padding: 14px 30px;
+  outline: 0;
+  background-color: #f4f5f8;
+  border: 1px solid #f4f5f8;
+  color: #686a6f;
+  font-size: 0.9rem;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.text_area {
+  width: 100%;
+  background-color: #f4f5f8;
+  border: 1px solid #f4f5f8;
+  border-radius: 10px;
+  padding: 14px 30px;
+  outline: 0;
+  color: #686a6f;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  height: 200px !important;
+}
+.send_message {
+  background: #336aea;
+  padding: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact_phone {
+  padding: 24px 0;
+  background: #222429;
+  color: #fff;
+  font-size: 26px;
+  min-width: 77px;
+  margin-bottom: 20px;
 }

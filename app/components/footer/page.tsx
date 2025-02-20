@@ -1,6 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import Styles from "../../styles/header.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faPinterest,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -21,7 +28,25 @@ const Footer = () => {
                   />
                   <div className={Styles.footer_logo_info}>
                     {`We're a global team of strategic digital collaborating with 
-  some of the world's largest brands.`}
+                      some of the world's largest brands.`}
+                  </div>
+                  <div className="pl-0 py-2">
+                    <div className=" text-lightTextColor font-medium text-[15px]">
+                      <ul className={Styles.project_details}>
+                        <li>
+                          <FontAwesomeIcon icon={faTwitter} />
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faFacebook} />
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faInstagram} />
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faPinterest} />
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
