@@ -29,7 +29,7 @@ const projectDetails = () => {
                 Here to Know About This Project
               </h1>
               <p className=" text-lightTextColor font-[400] text-[15px] leading-[30px]">
-                There are many variations of passages of psum available, but the
+                {`There are many variations of passages of psum available, but the
                 majority have suffered alteration in some form, by injected
                 humour, or randomised words which don't look even slightly
                 believable. If you are going to use a passage of Lorem Ipsum,
@@ -37,37 +37,37 @@ const projectDetails = () => {
                 the middle of text. Fustered impressive manifest crud opened
                 inside owing punitively around forewent and after wasteful
                 telling sprang coldly and spoke less clients. Squid hesitantly
-                preparatory gibbered some tyran nically talkative jepers crud
+                preparatory gibbered some tyran nically talkative jepers crud`}
                 decore recteque philosophia eumuas.
               </p>
               <p className=" text-lightTextColor font-[400] text-[15px] leading-[30px]">
-                Beyond more stoic this along goodness hey this this wow manatee
+                {` Beyond more stoic this along goodness hey this this wow manatee
                 mongoose one as since a far flustered impressive manifest far
                 crud opened inside owing punitively around forewent and after
                 wasteful telling sprang coldly and spoke less clients. Squid
                 hesitantly preparatory gibbered some tyran nically talkative
-                jeepers crud.
+                jeepers crud.`}
               </p>
               <h1 className=" font-bold text-[24px] pb-2 pt-4">
                 Project Challenges
               </h1>
               <p className=" text-lightTextColor font-[400] text-[15px] leading-[30px]">
-                Eque porro est qui dolorem ipsum quia quaed inventore veritatis
+                {`Eque porro est qui dolorem ipsum quia quaed inventore veritatis
                 et quasi architecto beatae vitae dicta sunt explicabo. Aelltes
                 port lacus quis enim var sed efficitur turpis gilla sed sit amet
                 finibus eros. Lorem Ipsum is simply dummy text of the printing
-                and typesetting.
+                and typesetting.`}
               </p>
               <h1 className=" font-bold text-[24px] pb-2 pt-4">
                 Organic Food Supply
               </h1>
               <p className=" text-lightTextColor font-[400] text-[15px] leading-[30px]">
-                When an unknown printer took a galley of type and scrambled it
+                {`When an unknown printer took a galley of type and scrambled it
                 to make a type specimen book. It has survived not only five
                 centuries, but also the leap into electronic typesetting,
                 remaining essentially unchanged. It was popularised in the 1960s
                 with the release of Letraset sheets containing. Neque porro est
-                qui dolorem ipsumo.
+                qui dolorem ipsumo.`}
               </p>
             </div>
             <div className="col-xl-4 col-lg-4">
