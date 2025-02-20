@@ -104,7 +104,7 @@ const page = () => {
                 </div>
 
                 <div>
-                  <button className=" bg-customBlue py-3 px-5 font-bold text-[12px] uppercase text-white">
+                  <button className=" bg-customBlue py-3 px-5 font-bold text-[12px] uppercase text-white transition-all duration-300 ease-in-out transform hover:bg-btnHover hover:translate-y-1 shadow-md hover:shadow-lg">
                     Explore Now
                   </button>
                 </div>

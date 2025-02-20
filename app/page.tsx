@@ -124,7 +124,10 @@ export default function Home() {
               IT Technology services built specifically for your business.
             </div>
             <div className=" ml-3">
-              <button className=" text-white bg-customBlue py-2 px-5 font-bold text-[12px] uppercase">
+              <button
+                className=" text-white bg-customBlue py-2 px-5 font-bold text-[12px] uppercase transition-all duration-300 ease-in-out transform hover:bg-btnHover hover:translate-y-1 shadow-md hover:shadow-lg 
+              animate__animated animate__fadeInUp animate__delay-1s"
+              >
                 Find Your Solution
               </button>
             </div>
@@ -220,7 +223,7 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <button className=" bg-customBlue py-3 px-5 font-bold text-[12px] uppercase text-white">
+                  <button className=" bg-customBlue py-3 px-5 font-bold text-[12px] uppercase text-white transition-all duration-300 ease-in-out transform hover:bg-btnHover hover:translate-y-1 shadow-md hover:shadow-lg">
                     Explore Now
                   </button>
                 </div>
@@ -348,7 +351,7 @@ export default function Home() {
               </div>
 
               <div className=" text-center pb-[40px]">
-                <button className=" text-white bg-customBlue  px-5 font-bold text-[14px] uppercase leading-[50px]">
+                <button className=" text-white bg-customBlue  px-5 font-bold text-[14px] uppercase leading-[50px] transition-all duration-300 ease-in-out transform hover:bg-btnHover hover:translate-y-1 shadow-md hover:shadow-lg">
                   Discover More
                 </button>
               </div>
