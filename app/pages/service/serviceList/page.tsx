@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "../../../styles/header.module.css";
 import Image from "next/image";
 import {
-  DataAnalysis,
+  // DataAnalysis,
   DigitalMarketing,
   Startup,
   Uxdesign,
