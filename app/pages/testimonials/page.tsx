@@ -1,6 +1,11 @@
 import React from "react";
 import Styles from "../../styles/header.module.css";
-import { Profile } from "@/app/Icons/IconsExport";
+import {
+  Profile,
+  TestMonials1,
+  TestMonials2,
+  TestMonials3,
+} from "@/app/Icons/IconsExport";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
@@ -15,113 +20,87 @@ const Testimonials = () => {
           <div className="text-white relative">{`Home > Pages > Testimonial`}</div>
         </div>
       </section>
-      <section>
+      <section className={Styles.service_overall_bg}>
         <div className={Styles.auto_container}>
-          <div>
-            <div className="row py-[90px]">
-              <div className="col-lg-6 col-md-6 col-sm-12">
-                <div className=" bg-cutomText relative">
-                  <div className={Styles.testie_share}>
+          <div className=" row py-[160px]">
+            <div className="col-md-4 col-lg-4 col-sm-12">
+              <div className={Styles.testio_monials_border}>
+                <div>
+                  <div className=" pb-2">
                     <div>
-                      <img src="https://html.kodesolution.com/2024/sotech-php/images/icons/quote-icon.png" />
+                      <Image
+                        src={TestMonials1}
+                        priority
+                        alt="TestMonials1"
+                        width={100}
+                        className=" absolute top-[-50px] left-[130px] rounded-[50%] h-[100px]"
+                      />
+                    </div>
+                    <div className=" pt-[30px] text-center">
+                      <div className=" text-[20] font-bold">Amelia Millar</div>
+                      <p className=" text-lightTextColor text-[14px]">
+                        Designer
+                      </p>
                     </div>
                   </div>
-                  <div className="px-10 absolute top-[40px]">
-                    <FontAwesomeIcon
-                      icon={faStar}
-                      className=" text-customBlue"
-                    />
-                    <FontAwesomeIcon
-                      icon={faStar}
-                      className=" text-customBlue"
-                    />
-                    <FontAwesomeIcon
-                      icon={faStar}
-                      className=" text-customBlue"
-                    />
-                    <FontAwesomeIcon
-                      icon={faStar}
-                      className=" text-customBlue"
-                    />
-                    <FontAwesomeIcon
-                      icon={faStar}
-                      className=" text-customBlue"
-                    />
-                  </div>
-                  <div className={Styles.testimonials}>
-                    <p className=" text-white leading-[40px] px-10 py-[80px] text-[22px] font-[400]">
-                      {`Proin a lacus arcu. Nullam id dui eu orci maximus. Cras at auctor lectus, vel pretium tellus. Class aptent sociosqu ad litora torquent per conubia nostra.`}
-                    </p>
-                  </div>
-                  <div className={Styles.testi_border}></div>
-                </div>
-                <div className=" flex justify-between items-center pt-4 ml-[160px]">
-                  <div className=" flex items-center">
-                    <Image
-                      src={Profile}
-                      alt="profile"
-                      className="border-2 w-[80px] h-[80px] rounded-[50%]"
-                    />
-                    <div className=" ml-3">
-                      <div className=" font-bold text-[16px]">
-                        Jessica brown
-                      </div>
-                      <div className=" font-medium text-customBrown text-[14px]">
-                        Founder of company
-                      </div>
-                    </div>
+                  <div className=" font-medium text-[14px] text-lightTextColor leading-[26px]">
+                    {` Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem consequuntur minus ducimus quibusdam doloremque
+                    deleniti consequatur`}
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 col-md-6 col-sm-12">
-                <div className=" bg-cutomText relative">
-                  <div className={Styles.testie_share}>
-                    <div>
-                      <img src="https://html.kodesolution.com/2024/sotech-php/images/icons/quote-icon.png" />
-                    </div>
-                  </div>
-                  <div className="px-10 absolute top-[40px]">
-                    <FontAwesomeIcon
-                      icon={faStar}
-                      className=" text-customBlue"
-                    />
-                    <FontAwesomeIcon
-                      icon={faStar}
-                      className=" text-customBlue"
-                    />
-                    <FontAwesomeIcon
-                      icon={faStar}
-                      className=" text-customBlue"
-                    />
-                    <FontAwesomeIcon
-                      icon={faStar}
-                      className=" text-customBlue"
-                    />
-                    <FontAwesomeIcon
-                      icon={faStar}
-                      className=" text-customBlue"
-                    />
-                  </div>
-                  <div className={Styles.testimonials}>
-                    <p className=" text-white leading-[40px] px-10 py-[80px] text-[22px] font-[400]">
-                      {`Proin a lacus arcu. Nullam id dui eu orci maximus. Cras at auctor lectus, vel pretium tellus. Class aptent sociosqu ad litora torquent per conubia nostra.`}
-                    </p>
-                  </div>
-                  <div className={Styles.testi_border}></div>
-                </div>
-                <div className=" flex justify-between items-center pt-4 ml-[160px]">
-                  <div className=" flex items-center">
+            </div>
+            <div className="col-md-4 col-lg-4 col-sm-12">
+              <div className={Styles.testio_monials_border}>
+                <div>
+                  <div className=" pb-2">
                     <Image
-                      src={Profile}
-                      alt="profile"
-                      className="border-2 w-[80px] h-[80px] rounded-[50%]"
+                      src={TestMonials2}
+                      priority
+                      alt="TestMonials2"
+                      width={100}
+                      className=" absolute top-[-50px] left-[130px] rounded-[50%] h-[100px]"
                     />
-                    <div className=" ml-3">
-                      <div className=" font-bold text-[16px]">Alesha Brown</div>
-                      <div className=" font-medium text-customBrown text-[14px]">
-                        Co Founder of company
-                      </div>
+                    <div className=" pt-[30px] text-center">
+                      <div className=" text-[20] font-bold">Amelia Millar</div>
+                      <p className=" text-lightTextColor text-[14px]">
+                        Designer
+                      </p>
                     </div>
+                  </div>
+
+                  <div className=" font-medium text-[14px] text-lightTextColor leading-[26px]">
+                    {` Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem consequuntur minus ducimus quibusdam doloremque
+                    deleniti consequatur`}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 col-lg-4 col-sm-12">
+              <div className={Styles.testio_monials_border}>
+                <div>
+                  <div className="pb-2">
+                    <Image
+                      src={TestMonials3}
+                      priority
+                      alt="TestMonials3"
+                      width={100}
+                      className=" absolute top-[-50px] left-[130px] rounded-[50%] h-[100px]"
+                    />
+                    <div className=" pt-[30px] text-center">
+                      <div className=" text-[20] font-bold">Amelia Millar</div>
+                      <p className=" text-lightTextColor text-[14px]">
+                        Designer
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className=" font-medium text-[14px] text-lightTextColor leading-[26px]">
+                    {` Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem consequuntur minus ducimus quibusdam doloremque
+                    deleniti consequatur`}
                   </div>
                 </div>
               </div>

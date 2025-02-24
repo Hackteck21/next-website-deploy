@@ -17,7 +17,94 @@ const ServiceList = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className={Styles.service_overall_bg}>
+        <div className={Styles.auto_container}>
+          <div className=" text-center py-5">
+            <div className=" text-customBlue text-[16] font-medium">
+              What We Do
+            </div>
+            <div className=" text-[30px] font-extrabold">
+              Provide the Best Consulting in This Industry
+            </div>
+          </div>
+          <div className="row">
+            <div className=" col-md-4 col-lg-4 col-sm-12 relative py-[50px] ">
+              <div className={Styles.service_border_radius}>
+                <div className=" flex justify-center ">
+                  <Image
+                    src={Startup}
+                    alt="startup"
+                    priority
+                    className={`${Styles.service_white_img} `}
+                  />
+                </div>
+                <div className=" text-center">
+                  <h1 className=" font-bold text-[18px] text-cutomText pt-4 px-4">
+                    Product Development
+                  </h1>
+                  <div>
+                    {" "}
+                    <p className=" text-[16px] text-lightTextColor px-4 pt-2  leading-[30px]">
+                      {`We’ve designed a culture that allows our stewards to
+                    assimilate`}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className=" col-md-4 col-lg-4 col-sm-12 relative py-[50px] ">
+              <div className={Styles.service_border_radius}>
+                <div className=" flex justify-center ">
+                  <Image
+                    src={Uxdesign}
+                    alt="Uxdesign"
+                    priority
+                    className={`${Styles.service_white_img} `}
+                  />
+                </div>
+                <div className=" text-center">
+                  <h1 className=" font-bold text-[18px] text-cutomText pt-4 px-4">
+                    UX Design
+                  </h1>
+                  <div>
+                    {" "}
+                    <p className=" text-[16px] text-lightTextColor px-4 pt-2  leading-[30px]">
+                      {`We’ve designed a culture that allows our stewards to
+                    assimilate`}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className=" col-md-4 col-lg-4 col-sm-12 relative py-[50px] ">
+              <div className={Styles.service_border_radius}>
+                <div className=" flex justify-center ">
+                  <Image
+                    src={DigitalMarketing}
+                    alt="DigitalMarketing"
+                    priority
+                    className={`${Styles.service_white_img} `}
+                  />
+                </div>
+                <div className=" text-center">
+                  <h1 className=" font-bold text-[18px] text-cutomText pt-4 px-4">
+                    Web Development
+                  </h1>
+                  <div>
+                    {" "}
+                    <p className=" text-[16px] text-lightTextColor px-4 pt-2  leading-[30px]">
+                      {`We’ve designed a culture that allows our stewards to
+                    assimilate`}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <section>
         <div className={Styles.auto_container}>
           <div className="row py-[100px]">
             <div className="col-md-4 col-lg-4 col-sm-12">
@@ -226,7 +313,7 @@ const ServiceList = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

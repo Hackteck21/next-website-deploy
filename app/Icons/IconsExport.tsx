@@ -9,6 +9,15 @@ import Profile from "../assets/images/profile.png";
 import DataAnalysis from "../assets/images/analysis.png";
 import DigitalMarketing from "../assets/images/social-media-marketing.png";
 import Uidesign from "../assets/images/ui.png";
+
+// Client Icons
+import Truefinedge from "../assets/images/clients/true_finedge.svg";
+import Codetrix from "../assets/images/clients/codetrix.svg";
+
+// Testmonials
+import TestMonials1 from "../assets/images/testmonials/test-1.jpg";
+import TestMonials2 from "../assets/images/testmonials/test-2.jpg";
+import TestMonials3 from "../assets/images/testmonials/test-3.jpg";
 export {
   Doller,
   Device,
@@ -21,4 +30,9 @@ export {
   DataAnalysis,
   DigitalMarketing,
   Uidesign,
+  Truefinedge,
+  Codetrix,
+  TestMonials1,
+  TestMonials2,
+  TestMonials3,
 };
