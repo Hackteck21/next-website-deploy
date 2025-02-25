@@ -1,7 +1,6 @@
 import React from "react";
 import Styles from "../../styles/header.module.css";
 import {
-  Profile,
   TestMonials1,
   TestMonials2,
   TestMonials3,

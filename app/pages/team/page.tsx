@@ -17,7 +17,7 @@ import Person5 from "../../assets/images/bg/p5.jpg";
 import Slider from "react-slick";
 import Image from "next/image";
 import { motion } from "framer-motion";
-var settings = {
+let settings = {
   dots: true,
   infinite: true,
   speed: 500,

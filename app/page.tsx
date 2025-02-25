@@ -13,7 +13,6 @@ import bannerImg1 from "./assets/images/bg/banner_right.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import "animate.css";
-import Marquee from "react-fast-marquee";
 import { Codetrix, Startup, Truefinedge } from "./Icons/IconsExport";
 import { motion } from "framer-motion";
 import Presentation from "./assets/images/bg/presentation.jpg";
@@ -24,7 +23,7 @@ import SpringDance from "./assets/images/bg/spring-dec.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-var settings = {
+let settings = {
   dots: false,
   infinite: true,
   speed: 500,
