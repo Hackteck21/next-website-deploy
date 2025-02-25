@@ -16,6 +16,7 @@ import Person4 from "../../assets/images/bg/p4.jpg";
 import Person5 from "../../assets/images/bg/p5.jpg";
 import Slider from "react-slick";
 import Image from "next/image";
+import { motion } from "framer-motion";
 var settings = {
   dots: true,
   infinite: true,
@@ -31,190 +32,215 @@ const TeamList = () => {
   return (
     <div>
       <section className={Styles.about_banner}>
-        <div className={Styles.auto_container}>
-          <div className="text-[60px] font-extrabold text-white relative z-10">
-            Team Grid
+        <motion.div
+          className="w-[100%]  rounded-lg mb-10"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className={Styles.auto_container}>
+            <div className="text-[60px] font-extrabold text-white relative z-10">
+              Team Grid
+            </div>
+            <div className="text-white relative">{`Home > Pages > Team Grid`}</div>
           </div>
-          <div className="text-white relative">{`Home > Pages > Team Grid`}</div>
-        </div>
+        </motion.div>
       </section>
       <section className="pb-[140px]">
         <div className={Styles.auto_container}>
-          <div className=" py-10">
-            <h1 className=" font-bold text-[30px] text-center tracking-[2px] capitalize">
-              Meet Our Expert{" "}
-              <span className=" text-customBlue">team member</span> will ready
-              <div>for your service</div>
-            </h1>
-          </div>
+          <motion.div
+            className="w-[100%]  rounded-lg mb-10"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            <div className=" py-10">
+              <h1 className=" font-bold text-[30px] text-center tracking-[2px] capitalize">
+                Meet Our Expert{" "}
+                <span className=" text-customBlue">team member</span> will ready
+                <div>for your service</div>
+              </h1>
+            </div>
+          </motion.div>
+
           <div className="row">
-            <Slider {...settings}>
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className=" relative mr-4">
-                  <div>
-                    <Image
-                      src={Person1}
-                      alt="Personal"
-                      priority
-                      className=" h-[500px]"
-                    />
-                  </div>
-                  <div className={Styles.team_card}>
-                    <div className=" font-bold text-[16px] uppercase pb-2">
-                      Kevin Martin
+            <motion.div
+              className="w-[100%]  rounded-lg mb-10"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <Slider {...settings}>
+                <div className="col-lg-4 col-md-6 col-sm-12">
+                  <div className=" relative mr-4">
+                    <div>
+                      <Image
+                        src={Person1}
+                        alt="Personal"
+                        priority
+                        className=" h-[500px]"
+                      />
                     </div>
-                    <div className=" font-medium text-[14px] uppercase text-lightTextColor">
-                      Designer
-                    </div>
-                    <div className={Styles.overall_team}>
-                      <ul className={Styles.team_list}>
-                        <li>
-                          <FontAwesomeIcon icon={faTwitter} />
-                        </li>
-                        <li>
-                          <FontAwesomeIcon icon={faFacebook} />
-                        </li>
-                        <li>
-                          <FontAwesomeIcon icon={faInstagram} />
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className=" relative mr-4">
-                  <div>
-                    <Image
-                      src={Person2}
-                      alt="Personal"
-                      priority
-                      className=" h-[500px]"
-                    />
-                  </div>
-                  <div className={Styles.team_card}>
-                    <div className=" font-bold text-[16px] uppercase pb-2">
-                      Aleesha Brown
-                    </div>
-                    <div className=" font-medium text-[14px] uppercase text-lightTextColor">
-                      Co founder
-                    </div>
-                    <div className={Styles.overall_team}>
-                      <ul className={Styles.team_list}>
-                        <li>
-                          <FontAwesomeIcon icon={faTwitter} />
-                        </li>
-                        <li>
-                          <FontAwesomeIcon icon={faFacebook} />
-                        </li>
-                        <li>
-                          <FontAwesomeIcon icon={faInstagram} />
-                        </li>
-                      </ul>
+                    <div className={Styles.team_card}>
+                      <div className=" font-bold text-[16px] uppercase pb-2">
+                        Kevin Martin
+                      </div>
+                      <div className=" font-medium text-[14px] uppercase text-lightTextColor">
+                        Designer
+                      </div>
+                      <div className={Styles.overall_team}>
+                        <ul className={Styles.team_list}>
+                          <li>
+                            <FontAwesomeIcon icon={faTwitter} />
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon={faFacebook} />
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon={faInstagram} />
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className=" relative mr-4">
-                  <div>
-                    <Image
-                      src={Person3}
-                      alt="Personal"
-                      priority
-                      className=" h-[500px]"
-                    />
-                  </div>
-                  <div className={Styles.team_card}>
-                    <div className=" font-bold text-[16px] uppercase pb-2">
-                      Sarah Albert
+                <div className="col-lg-4 col-md-6 col-sm-12">
+                  <div className=" relative mr-4">
+                    <div>
+                      <Image
+                        src={Person2}
+                        alt="Personal"
+                        priority
+                        className=" h-[500px]"
+                      />
                     </div>
-                    <div className=" font-medium text-[14px] uppercase text-lightTextColor">
-                      Developer
-                    </div>
-                    <div className={Styles.overall_team}>
-                      <ul className={Styles.team_list}>
-                        <li>
-                          <FontAwesomeIcon icon={faTwitter} />
-                        </li>
-                        <li>
-                          <FontAwesomeIcon icon={faFacebook} />
-                        </li>
-                        <li>
-                          <FontAwesomeIcon icon={faInstagram} />
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className=" relative mr-4">
-                  <div>
-                    <Image
-                      src={Person4}
-                      alt="Personal"
-                      priority
-                      className=" h-[500px]"
-                    />
-                  </div>
-                  <div className={Styles.team_card}>
-                    <div className=" font-bold text-[16px] uppercase pb-2">
-                      Aleesha Brown
-                    </div>
-                    <div className=" font-medium text-[14px] uppercase text-lightTextColor">
-                      Co founder
-                    </div>
-                    <div className={Styles.overall_team}>
-                      <ul className={Styles.team_list}>
-                        <li>
-                          <FontAwesomeIcon icon={faTwitter} />
-                        </li>
-                        <li>
-                          <FontAwesomeIcon icon={faFacebook} />
-                        </li>
-                        <li>
-                          <FontAwesomeIcon icon={faInstagram} />
-                        </li>
-                      </ul>
+                    <div className={Styles.team_card}>
+                      <div className=" font-bold text-[16px] uppercase pb-2">
+                        Aleesha Brown
+                      </div>
+                      <div className=" font-medium text-[14px] uppercase text-lightTextColor">
+                        Co founder
+                      </div>
+                      <div className={Styles.overall_team}>
+                        <ul className={Styles.team_list}>
+                          <li>
+                            <FontAwesomeIcon icon={faTwitter} />
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon={faFacebook} />
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon={faInstagram} />
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className=" relative mr-4">
-                  <div>
-                    <Image
-                      src={Person5}
-                      alt="Personal"
-                      priority
-                      className=" h-[500px]"
-                    />
-                  </div>
-                  <div className={Styles.team_card}>
-                    <div className=" font-bold text-[16px] uppercase pb-2">
-                      Aleesha Brown
+                <div className="col-lg-4 col-md-6 col-sm-12">
+                  <div className=" relative mr-4">
+                    <div>
+                      <Image
+                        src={Person3}
+                        alt="Personal"
+                        priority
+                        className=" h-[500px]"
+                      />
                     </div>
-                    <div className=" font-medium text-[14px] uppercase text-lightTextColor">
-                      Co founder
-                    </div>
-                    <div className={Styles.overall_team}>
-                      <ul className={Styles.team_list}>
-                        <li>
-                          <FontAwesomeIcon icon={faTwitter} />
-                        </li>
-                        <li>
-                          <FontAwesomeIcon icon={faFacebook} />
-                        </li>
-                        <li>
-                          <FontAwesomeIcon icon={faInstagram} />
-                        </li>
-                      </ul>
+                    <div className={Styles.team_card}>
+                      <div className=" font-bold text-[16px] uppercase pb-2">
+                        Sarah Albert
+                      </div>
+                      <div className=" font-medium text-[14px] uppercase text-lightTextColor">
+                        Developer
+                      </div>
+                      <div className={Styles.overall_team}>
+                        <ul className={Styles.team_list}>
+                          <li>
+                            <FontAwesomeIcon icon={faTwitter} />
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon={faFacebook} />
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon={faInstagram} />
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </Slider>
+                <div className="col-lg-4 col-md-6 col-sm-12">
+                  <div className=" relative mr-4">
+                    <div>
+                      <Image
+                        src={Person4}
+                        alt="Personal"
+                        priority
+                        className=" h-[500px]"
+                      />
+                    </div>
+                    <div className={Styles.team_card}>
+                      <div className=" font-bold text-[16px] uppercase pb-2">
+                        Aleesha Brown
+                      </div>
+                      <div className=" font-medium text-[14px] uppercase text-lightTextColor">
+                        Co founder
+                      </div>
+                      <div className={Styles.overall_team}>
+                        <ul className={Styles.team_list}>
+                          <li>
+                            <FontAwesomeIcon icon={faTwitter} />
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon={faFacebook} />
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon={faInstagram} />
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 col-sm-12">
+                  <div className=" relative mr-4">
+                    <div>
+                      <Image
+                        src={Person5}
+                        alt="Personal"
+                        priority
+                        className=" h-[500px]"
+                      />
+                    </div>
+                    <div className={Styles.team_card}>
+                      <div className=" font-bold text-[16px] uppercase pb-2">
+                        Aleesha Brown
+                      </div>
+                      <div className=" font-medium text-[14px] uppercase text-lightTextColor">
+                        Co founder
+                      </div>
+                      <div className={Styles.overall_team}>
+                        <ul className={Styles.team_list}>
+                          <li>
+                            <FontAwesomeIcon icon={faTwitter} />
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon={faFacebook} />
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon={faInstagram} />
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Slider>
+            </motion.div>
           </div>
         </div>
       </section>

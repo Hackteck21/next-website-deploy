@@ -52,7 +52,7 @@ const Header = () => {
                 onMouseLeave={() => setIsDropdownOpen(false)}
               >
                 <Link
-                  href="/pages"
+                  href="/"
                   className={clsx(
                     "hover:text-customBlue  group no-underline flex justify-center items-center transition-all duration-300",
                     pathname === "/pages"

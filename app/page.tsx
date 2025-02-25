@@ -1,29 +1,26 @@
 "use client";
 import Image from "next/image";
 import Styles from "./styles/header.module.css";
-// import doller from "./assets/images/money.png";
 import device from "./assets/images/device.png";
 import uxdesign from "./assets/images/engineering.png";
-// import business from "./assets/images/card-business.png";
 import support from "./assets/images/support-manage.png";
-// import about from "./assets/images/about-2.jpg";
 import startup from "./assets/images/startup.png";
 import profile from "./assets/images/profile.png";
 import dataAnalysis from "./assets/images/analysis.png";
 import digitalMarketing from "./assets/images/social-media-marketing.png";
 import uidesign from "./assets/images/ui.png";
-// import bannerImg from "./assets/images/banner_new.jpg";
 import bannerImg1 from "./assets/images/bg/banner_right.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import "animate.css";
-// import Marquee from "react-fast-marquee";
-import { Startup } from "./Icons/IconsExport";
+import Marquee from "react-fast-marquee";
+import { Codetrix, Startup, Truefinedge } from "./Icons/IconsExport";
 import { motion } from "framer-motion";
 import Presentation from "./assets/images/bg/presentation.jpg";
 import Person4 from "./assets/images/bg/p4.jpg";
 import Person1 from "./assets/images/bg/p1.jpg";
 import Person3 from "./assets/images/bg/p3.jpg";
+import SpringDance from "./assets/images/bg/spring-dec.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -163,48 +160,6 @@ export default function Home() {
               Our Clients
             </div>
           </motion.div>
-
-          {/* <div className=" pb-5">
-            <Marquee>
-              <div className=" mr-[80px]">
-                <Image
-                  src={Truefinedge}
-                  alt="client"
-                  priority
-                  width={200}
-                  height={200}
-                />
-              </div>
-              <div className=" mr-[80px]">
-                <Image
-                  src={Codetrix}
-                  alt="client"
-                  priority
-                  width={200}
-                  height={200}
-                />
-              </div>
-
-              <div className=" mr-[80px]">
-                <Image
-                  src={Truefinedge}
-                  alt="client"
-                  priority
-                  width={200}
-                  height={200}
-                />
-              </div>
-              <div className=" mr-[80px]">
-                <Image
-                  src={Codetrix}
-                  alt="client"
-                  priority
-                  width={200}
-                  height={200}
-                />
-              </div>
-            </Marquee>
-          </div> */}
         </div>
       </section>
       <section>
@@ -305,108 +260,72 @@ export default function Home() {
                 </div>
               </div>
             </Slider>
-            <div className="client-box-design"></div>
+            <div className="client-box-design">
+              <div className="client-border"></div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Card Section */}
-      {/* <section className={Styles.card_bg}>
-        <div className={Styles.auto_container}>
-          <div className="row row-cols-1 row-cols-sm-3 row-cols-lg-6 justify-content-center py-[40px] gap-4 animate__animated animate__fadeInUp animate__delay-1s">
-            <div className="col-md-3 bg-white p-0 border-t-4 border-customBlue">
-              <div className={Styles.card_custome}>
-                <div className=" flex justify-center pb-[30px]">
-                  <Image
-                    src={doller}
-                    alt="doller"
-                    priority
-                    className={Styles.card_img}
-                  />
-                </div>
-                <div className=" font-bold text-[17px] text-center px-4 ">
-                  Global<br></br> Network
-                </div>
-              </div>
+      <section>
+        <div className=" py-5 client-marquee">
+          <div
+            className={`${Styles.auto_container} flex justify-between items-center`}
+          >
+            <div>
+              <Image
+                src={Truefinedge}
+                alt="client"
+                priority
+                width={200}
+                height={200}
+              />
             </div>
-            <div className="col-md-3 bg-white p-0 border-t-4 border-customBlue">
-              <div className={Styles.card_custome}>
-                <div className=" flex justify-center pb-[30px]">
-                  <Image
-                    src={business}
-                    alt="business"
-                    priority
-                    className={Styles.card_img}
-                  />
-                </div>
-                <div className=" font-bold text-[17px] text-center px-4 ">
-                  Business<br></br> Consultation
-                </div>
-              </div>
+            <div>
+              <Image
+                src={Codetrix}
+                alt="client"
+                priority
+                width={200}
+                height={200}
+              />
             </div>
-            <div className="col-md-3 bg-white p-0 border-t-4 border-customBlue">
-              <div className={Styles.card_custome}>
-                <div className=" flex justify-center pb-[30px]">
-                  <Image
-                    src={device}
-                    alt="device"
-                    priority
-                    className={Styles.card_img}
-                  />
-                </div>
-                <div className=" font-bold text-[17px] text-center px-4 ">
-                  Website Development
-                </div>
-              </div>
+
+            <div>
+              <Image
+                src={Truefinedge}
+                alt="client"
+                priority
+                width={200}
+                height={200}
+              />
             </div>
-            <div className="col-md-3 bg-white p-0 border-t-4 border-customBlue">
-              <div className={Styles.card_custome}>
-                <div className=" flex justify-center pb-[30px]">
-                  <Image
-                    src={uxdesign}
-                    alt="uxdesign"
-                    priority
-                    className={Styles.card_img}
-                  />
-                </div>
-                <div className=" font-bold text-[17px] text-center px-4 ">
-                  UI/UX Design
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3 bg-white p-0 border-t-4 border-customBlue">
-              <div className={Styles.card_custome}>
-                <div className=" flex justify-center pb-[30px]">
-                  <Image
-                    src={support}
-                    alt="support"
-                    priority
-                    className={Styles.card_img}
-                  />
-                </div>
-                <div className=" font-bold text-[17px] text-center px-4 ">
-                  Support<br></br> Management
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className=" flex justify-center items-center pb-[30px]">
-            <div className=" text-customBrown font-medium ">
-              IT Technology services built specifically for your business.
-            </div>
-            <div className=" ml-3">
-              <button
-                className=" text-white bg-customBlue py-2 px-5 font-bold text-[12px] uppercase transition-all duration-300 ease-in-out transform hover:bg-btnHover hover:translate-y-1 shadow-md hover:shadow-lg 
-              animate__animated animate__fadeInUp animate__delay-1s"
-              >
-                Find Your Solution
-              </button>
+            <div>
+              <Image
+                src={Codetrix}
+                alt="client"
+                priority
+                width={200}
+                height={200}
+              />
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      <section className={Styles.card_bg}>
+      <section className={`${Styles.card_bg} relative`}>
+        <motion.div
+          className="w-[100%]  rounded-lg mb-10"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className={Styles.service_dance_img}>
+            <Image src={SpringDance} alt="SpringDance" priority />
+          </div>
+        </motion.div>
+
         <div className={Styles.auto_container}>
           <motion.div
             className="w-[100%]  rounded-lg mb-10"
@@ -415,7 +334,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className=" text-center font-bold text-[28px] pt-4">
+            <div className=" text-center font-bold text-[28px] pt-4 text-white">
               Our Services
             </div>
           </motion.div>
@@ -441,7 +360,7 @@ export default function Home() {
                   <div className=" font-bold text-[17px] text-center px-4 py-3 ">
                     Website Development
                   </div>
-                  <p className=" text-center text-[14px] font-medium text-lightTextColor">
+                  <p className=" text-center text-[14px] font-medium text-white">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Modi dolor asperiores dolorum praesentium aperiam
                     distinctio.
@@ -469,7 +388,7 @@ export default function Home() {
                   <div className=" font-bold text-[17px] text-center px-4 py-3 ">
                     UI/UX Design
                   </div>
-                  <p className=" text-center text-[14px] font-medium text-lightTextColor">
+                  <p className=" text-center text-[14px] font-medium text-white">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Modi dolor asperiores dolorum praesentium aperiam
                     distinctio.
@@ -497,7 +416,7 @@ export default function Home() {
                   <div className=" font-bold text-[17px] text-center px-4 py-3 ">
                     Support Management
                   </div>
-                  <p className=" text-center text-[14px] font-medium text-lightTextColor">
+                  <p className=" text-center text-[14px] font-medium text-white">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Modi dolor asperiores dolorum praesentium aperiam
                     distinctio.
@@ -525,7 +444,7 @@ export default function Home() {
                   <div className=" font-bold text-[17px] text-center px-4 py-3 ">
                     Product Development
                   </div>
-                  <p className=" text-center text-[14px] font-medium text-lightTextColor">
+                  <p className=" text-center text-[14px] font-medium text-white">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Modi dolor asperiores dolorum praesentium aperiam
                     distinctio.
@@ -553,7 +472,7 @@ export default function Home() {
                   <div className=" font-bold text-[17px] text-center px-4 py-3 ">
                     Website Development
                   </div>
-                  <p className=" text-center text-[14px] font-medium text-lightTextColor">
+                  <p className=" text-center text-[14px] font-medium text-white">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Modi dolor asperiores dolorum praesentium aperiam
                     distinctio.
@@ -581,7 +500,7 @@ export default function Home() {
                   <div className=" font-bold text-[17px] text-center px-4 py-3 ">
                     Website Development
                   </div>
-                  <p className=" text-center text-[14px] font-medium text-lightTextColor">
+                  <p className=" text-center text-[14px] font-medium text-white">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Modi dolor asperiores dolorum praesentium aperiam
                     distinctio.
@@ -591,6 +510,17 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <motion.div
+          className="w-[100%]  rounded-lg mb-10"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className={Styles.service_dance_img_right}>
+            <Image src={SpringDance} alt="SpringDance" priority />
+          </div>
+        </motion.div>
       </section>
 
       {/* banner 2 */}
@@ -606,10 +536,17 @@ export default function Home() {
                 viewport={{ once: true }}
               >
                 <div className={Styles.banner_left_2}>
-                  <Image src={Presentation} alt="ff" priority />
+                  <div className="about-page">
+                    <Image
+                      src={Presentation}
+                      alt="ff"
+                      priority
+                      className=" h-[600px] w-[500px]"
+                    />
+                  </div>
                 </div>
 
-                <div className=" absolute top-[233px] right-0 rounded-md shadow-customeBrow  bg-customBlue">
+                <div className=" absolute top-[160px] right-0 rounded-md shadow-customeBrow  bg-customBlue">
                   <div>
                     <div className=" flex items-center p-[30px]">
                       <Image

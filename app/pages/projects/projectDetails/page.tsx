@@ -1,7 +1,8 @@
+"use client";
 import React from "react";
 import Styles from "../../../styles/header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {} from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 import {
   faFacebook,
   faInstagram,
@@ -9,27 +10,50 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-const projectDetails = () => {
+const ProjectDetails = () => {
   return (
     <div>
       <section className={Styles.about_banner}>
-        <div className={Styles.auto_container}>
-          <div className="text-[60px] font-extrabold text-white relative z-10">
-            Project Details
+        <motion.div
+          className="w-[100%]  rounded-lg mb-10"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className={Styles.auto_container}>
+            <div className="text-[60px] font-extrabold text-white relative z-10">
+              Project Details
+            </div>
+            <div className="text-white relative">{`Home > Pages > ProjectsDetails`}</div>
           </div>
-          <div className="text-white relative">{`Home > Pages > ProjectsDetails`}</div>
-        </div>
+        </motion.div>
       </section>
       <section className=" py-[80px]">
         <div className={Styles.auto_container}>
           <img src="https://html.kodesolution.com/2024/sotech-php/images/resource/project-details.jpg" />
           <div className="row py-6">
             <div className="col-md-8 col-xl-8 col-lg-8">
-              <h1 className=" font-bold text-[24px] ">
-                Here to Know About This Project
-              </h1>
-              <p className=" text-lightTextColor font-[400] text-[15px] leading-[30px]">
-                {`There are many variations of passages of psum available, but the
+              <motion.div
+                className="w-[100%]  rounded-lg mb-10"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <h1 className=" font-bold text-[24px] ">
+                  Here to Know About This Project
+                </h1>
+              </motion.div>
+              <motion.div
+                className="w-[100%]  rounded-lg mb-10"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <p className=" text-lightTextColor font-[400] text-[15px] leading-[30px]">
+                  {`There are many variations of passages of psum available, but the
                 majority have suffered alteration in some form, by injected
                 humour, or randomised words which don't look even slightly
                 believable. If you are going to use a passage of Lorem Ipsum,
@@ -38,97 +62,148 @@ const projectDetails = () => {
                 inside owing punitively around forewent and after wasteful
                 telling sprang coldly and spoke less clients. Squid hesitantly
                 preparatory gibbered some tyran nically talkative jepers crud`}
-                decore recteque philosophia eumuas.
-              </p>
-              <p className=" text-lightTextColor font-[400] text-[15px] leading-[30px]">
-                {` Beyond more stoic this along goodness hey this this wow manatee
+                  decore recteque philosophia eumuas.
+                </p>
+              </motion.div>
+              <motion.div
+                className="w-[100%]  rounded-lg mb-10"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <p className=" text-lightTextColor font-[400] text-[15px] leading-[30px]">
+                  {` Beyond more stoic this along goodness hey this this wow manatee
                 mongoose one as since a far flustered impressive manifest far
                 crud opened inside owing punitively around forewent and after
                 wasteful telling sprang coldly and spoke less clients. Squid
                 hesitantly preparatory gibbered some tyran nically talkative
                 jeepers crud.`}
-              </p>
-              <h1 className=" font-bold text-[24px] pb-2 pt-4">
-                Project Challenges
-              </h1>
-              <p className=" text-lightTextColor font-[400] text-[15px] leading-[30px]">
-                {`Eque porro est qui dolorem ipsum quia quaed inventore veritatis
+                </p>
+              </motion.div>
+              <motion.div
+                className="w-[100%]  rounded-lg mb-10"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <h1 className=" font-bold text-[24px] pb-2 pt-4">
+                  Project Challenges
+                </h1>
+              </motion.div>
+              <motion.div
+                className="w-[100%]  rounded-lg mb-10"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <p className=" text-lightTextColor font-[400] text-[15px] leading-[30px]">
+                  {`Eque porro est qui dolorem ipsum quia quaed inventore veritatis
                 et quasi architecto beatae vitae dicta sunt explicabo. Aelltes
                 port lacus quis enim var sed efficitur turpis gilla sed sit amet
                 finibus eros. Lorem Ipsum is simply dummy text of the printing
                 and typesetting.`}
-              </p>
-              <h1 className=" font-bold text-[24px] pb-2 pt-4">
-                Organic Food Supply
-              </h1>
-              <p className=" text-lightTextColor font-[400] text-[15px] leading-[30px]">
-                {`When an unknown printer took a galley of type and scrambled it
+                </p>
+              </motion.div>
+              <motion.div
+                className="w-[100%]  rounded-lg mb-10"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <h1 className=" font-bold text-[24px] pb-2 pt-4">
+                  Organic Food Supply
+                </h1>
+              </motion.div>
+              <motion.div
+                className="w-[100%]  rounded-lg mb-10"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <p className=" text-lightTextColor font-[400] text-[15px] leading-[30px]">
+                  {`When an unknown printer took a galley of type and scrambled it
                 to make a type specimen book. It has survived not only five
                 centuries, but also the leap into electronic typesetting,
                 remaining essentially unchanged. It was popularised in the 1960s
                 with the release of Letraset sheets containing. Neque porro est
                 qui dolorem ipsumo.`}
-              </p>
+                </p>
+              </motion.div>
             </div>
             <div className="col-xl-4 col-lg-4">
-              <div className=" bg-cardbg px-[30px] py-[20px] rounded-md">
-                <div className=" py-3">
-                  <div className=" text-lightTextColor font-medium text-[15px] ">
-                    Date
-                  </div>
-                  <div className="text-black font-bold text-[15px]">
-                    22 April, 2024
-                  </div>
-                </div>
-                <div className=" py-3">
-                  <div className=" text-lightTextColor font-medium text-[15px] ">
-                    Client
-                  </div>
-                  <div className="text-black font-bold text-[15px]">
-                    TrueFinedge
-                  </div>
-                </div>
-                <div className=" py-3">
-                  <div className=" text-lightTextColor font-medium text-[15px] ">
-                    Website
-                  </div>
-                  <div className="text-black font-bold text-[15px]">
-                    www.truefinedge.com
-                  </div>
-                </div>
-                <div className=" py-3">
-                  <div className=" text-lightTextColor font-medium text-[15px] ">
-                    Location
-                  </div>
-                  <div className="text-black font-bold text-[15px]">
-                    Chennai,India
-                  </div>
-                </div>
-                <div className=" py-3">
-                  <div className=" text-lightTextColor font-medium text-[15px] ">
-                    Value
-                  </div>
-                  <div className="text-black font-bold text-[15px]">
-                    $11,367
-                  </div>
-                </div>
-                <div className="py-3">
-                  <div className=" text-lightTextColor font-medium text-[15px]">
-                    <ul className={Styles.project_details}>
-                      <li>
-                        <FontAwesomeIcon icon={faTwitter} />
-                      </li>
-                      <li>
-                        <FontAwesomeIcon icon={faFacebook} />
-                      </li>
-                      <li>
-                        <FontAwesomeIcon icon={faInstagram} />
-                      </li>
-                      <li>
-                        <FontAwesomeIcon icon={faPinterest} />
-                      </li>
-                    </ul>
-                  </div>
+              <div>
+                <div className=" bg-cardbg px-[30px] py-[20px] rounded-md">
+                  <motion.div
+                    className="w-[100%]  rounded-lg mb-10"
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className=" py-3">
+                      <div className=" text-lightTextColor font-medium text-[15px] ">
+                        Date
+                      </div>
+                      <div className="text-black font-bold text-[15px]">
+                        22 April, 2024
+                      </div>
+                    </div>
+                    <div className=" py-3">
+                      <div className=" text-lightTextColor font-medium text-[15px] ">
+                        Client
+                      </div>
+                      <div className="text-black font-bold text-[15px]">
+                        TrueFinedge
+                      </div>
+                    </div>
+                    <div className=" py-3">
+                      <div className=" text-lightTextColor font-medium text-[15px] ">
+                        Website
+                      </div>
+                      <div className="text-black font-bold text-[15px]">
+                        www.truefinedge.com
+                      </div>
+                    </div>
+                    <div className=" py-3">
+                      <div className=" text-lightTextColor font-medium text-[15px] ">
+                        Location
+                      </div>
+                      <div className="text-black font-bold text-[15px]">
+                        Chennai,India
+                      </div>
+                    </div>
+                    <div className=" py-3">
+                      <div className=" text-lightTextColor font-medium text-[15px] ">
+                        Value
+                      </div>
+                      <div className="text-black font-bold text-[15px]">
+                        $11,367
+                      </div>
+                    </div>
+                    <div className="py-3">
+                      <div className=" text-lightTextColor font-medium text-[15px]">
+                        <ul className={Styles.project_details}>
+                          <li>
+                            <FontAwesomeIcon icon={faTwitter} />
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon={faFacebook} />
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon={faInstagram} />
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon={faPinterest} />
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </motion.div>
                 </div>
               </div>
             </div>
@@ -139,4 +214,4 @@ const projectDetails = () => {
   );
 };
 
-export default projectDetails;
+export default ProjectDetails;

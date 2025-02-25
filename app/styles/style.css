@@ -33,6 +33,25 @@
   bottom: 0;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
+  border-bottom-right-radius: 30px;
+  opacity: 0.3;
+}
+
+.client-border {
+  /* border: 1px solid #fdfdfd;
+  height: 105px;
+  border-top-left-radius: 270px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  opacity: 0.2;
+  width: 100px;
+  position: absolute;
+  bottom: 0px;
+  right: 0; */
+}
+.client-marquee {
+  background-color: #fff;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px 30px;
 }
