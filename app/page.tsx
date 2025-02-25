@@ -6,7 +6,7 @@ import device from "./assets/images/device.png";
 import uxdesign from "./assets/images/engineering.png";
 // import business from "./assets/images/card-business.png";
 import support from "./assets/images/support-manage.png";
-import about from "./assets/images/about-2.jpg";
+// import about from "./assets/images/about-2.jpg";
 import startup from "./assets/images/startup.png";
 import profile from "./assets/images/profile.png";
 import dataAnalysis from "./assets/images/analysis.png";
@@ -17,8 +17,8 @@ import bannerImg1 from "./assets/images/bg/banner_right.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import "animate.css";
-import Marquee from "react-fast-marquee";
-import { Codetrix, Startup, Truefinedge } from "./Icons/IconsExport";
+// import Marquee from "react-fast-marquee";
+import { Startup } from "./Icons/IconsExport";
 import { motion } from "framer-motion";
 import Presentation from "./assets/images/bg/presentation.jpg";
 import Person4 from "./assets/images/bg/p4.jpg";
@@ -305,9 +305,7 @@ export default function Home() {
                 </div>
               </div>
             </Slider>
-            <div className="client-box-design">
-                   
-            </div>
+            <div className="client-box-design"></div>
           </div>
         </div>
       </section>
