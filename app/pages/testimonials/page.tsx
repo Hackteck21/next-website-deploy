@@ -7,8 +7,8 @@ import {
   TestMonials3,
 } from "@/app/Icons/IconsExport";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faStar } from "@fortawesome/free-solid-svg-icons";
 const Testimonials = () => {
   return (
     <div>

@@ -20,7 +20,23 @@ import "animate.css";
 import Marquee from "react-fast-marquee";
 import { Codetrix, Startup, Truefinedge } from "./Icons/IconsExport";
 import { motion } from "framer-motion";
-
+import Presentation from "./assets/images/bg/presentation.jpg";
+import Person4 from "./assets/images/bg/p4.jpg";
+import Person1 from "./assets/images/bg/p1.jpg";
+import Person3 from "./assets/images/bg/p3.jpg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+var settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  arrows: false,
+};
 export default function Home() {
   return (
     <div>
@@ -135,7 +151,7 @@ export default function Home() {
       </motion.div>
 
       <section>
-        <div className=" py-10">
+        <div className="">
           <motion.div
             className="w-[100%]  rounded-lg mb-10"
             initial={{ opacity: 0, y: 50 }}
@@ -143,12 +159,12 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className=" text-center font-extrabold text-[28px] pb-5">
+            <div className=" text-center font-extrabold text-[28px] ">
               Our Clients
             </div>
           </motion.div>
 
-          <div>
+          {/* <div className=" pb-5">
             <Marquee>
               <div className=" mr-[80px]">
                 <Image
@@ -188,6 +204,110 @@ export default function Home() {
                 />
               </div>
             </Marquee>
+          </div> */}
+        </div>
+      </section>
+      <section>
+        <div className={Styles.auto_container}>
+          <div>
+            <h1 className=" font-bold text-[30px] text-center tracking-[2px] capitalize">
+              You Can See our clients feedback
+              <span className=" text-customBlue"> What You Say?</span>
+            </h1>
+          </div>
+          <div className="our-client-overall">
+            <Slider {...settings}>
+              <div>
+                <div className="row">
+                  <div className="col-md-4">
+                    <div>
+                      <Image
+                        src={Person4}
+                        alt="Personal"
+                        priority
+                        className=" h-[400px] w-[300px] client-image-border"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <p className="our-client-para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Facere, doloremque voluptate. Velit unde commodi,
+                      distinctio necessitatibus adipisci sint incidunt dolorem
+                      nihil rem dicta quae sapiente eius non accusamus ullam
+                      quaerat.
+                    </p>
+                    <div className=" border-t-2 border-customBlue w-[200px]">
+                      <div className=" font-bold text-[16px] text-customBlue pt-[10px]">
+                        Smirthi Manthana
+                      </div>
+                      <p className=" font-medium text-[14px]">CEO of company</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="row">
+                  <div className="col-md-4">
+                    <div>
+                      <Image
+                        src={Person1}
+                        alt="Personal"
+                        priority
+                        className=" h-[400px] w-[300px] client-image-border"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <p className="our-client-para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Facere, doloremque voluptate. Velit unde commodi,
+                      distinctio necessitatibus adipisci sint incidunt dolorem
+                      nihil rem dicta quae sapiente eius non accusamus ullam
+                      quaerat.
+                    </p>
+                    <div>
+                      <div className=" font-bold text-[16px] text-customBlue">
+                        Smirthi Manthana
+                      </div>
+                      <p className=" font-medium text-[14px]">CEO of company</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="row">
+                  <div className="col-md-4">
+                    <div>
+                      <Image
+                        src={Person3}
+                        alt="Person3"
+                        priority
+                        className=" h-[400px] w-[300px] client-image-border"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <p className="our-client-para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Facere, doloremque voluptate. Velit unde commodi,
+                      distinctio necessitatibus adipisci sint incidunt dolorem
+                      nihil rem dicta quae sapiente eius non accusamus ullam
+                      quaerat.
+                    </p>
+                    <div>
+                      <div className=" font-bold text-[16px] text-customBlue">
+                        Smirthi Manthana
+                      </div>
+                      <p className=" font-medium text-[14px]">CEO of company</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Slider>
+            <div className="client-box-design">
+                   
+            </div>
           </div>
         </div>
       </section>
@@ -487,8 +607,11 @@ export default function Home() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                <div className={Styles.banner_2}></div>
-                <div className=" absolute  bottom-[70px] left-[-100px] rounded-md shadow-customeBrow  bg-customBlue">
+                <div className={Styles.banner_left_2}>
+                  <Image src={Presentation} alt="ff" priority />
+                </div>
+
+                <div className=" absolute top-[233px] right-0 rounded-md shadow-customeBrow  bg-customBlue">
                   <div>
                     <div className=" flex items-center p-[30px]">
                       <Image
@@ -506,9 +629,6 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className=" absolute top-[70px] right-0 rounded-md shadow-customeBrow border-4 border-white">
-                  <Image src={about} alt="about" />
                 </div>
               </motion.div>
             </div>

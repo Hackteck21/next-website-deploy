@@ -20,6 +20,8 @@
   background-repeat: no-repeat;
   background-color: #1c7abf;
   overflow: hidden;
+  background-size: cover;
+  /* background: url("../assets/images/bg/banner_bg_new.jpg"); */
   /* background: url("https://html.kodesolution.com/2024/sotech-php/images/main-slider/s1-1.jpg"); */
 }
 .banner_heading {
@@ -32,7 +34,6 @@
   height: 100%;
   position: relative;
 }
-
 
 /* .left_banner_border {
   position: relative;
@@ -239,13 +240,6 @@
 }
 
 .card_img {
-  /* height: 50px;
-  width: 50px;
-
-  filter: brightness(0) saturate(100%) invert(41%) sepia(96%) saturate(4193%)
-    hue-rotate(214deg) brightness(97%) contrast(89%);
-  transform: translateY(10px);
-  transition: filter 0.3s ease-in-out; */
   height: 50px;
   width: 50px;
   filter: brightness(0) saturate(100%) invert(41%) sepia(96%) saturate(4193%)
@@ -255,16 +249,13 @@
   right: 0;
   top: 18px;
 }
-
-.banner_2 {
-  width: 100%;
-  background-repeat: no-repeat !important;
-  background-position: center;
-  background-size: cover;
-  background-color: #f5f6f8;
+.banner_left_2 {
   height: 500px;
-  background: url("https://html.kodesolution.com/2024/sotech-php/images/resource/about-1.jpg ");
+  width: 500px;
+  position: relative;
 }
+
+
 .white_img {
   height: 50px;
   width: 50px;
@@ -402,8 +393,10 @@
 .team_card {
   position: absolute;
   background: #fff;
-  bottom: -60px;
-  padding: 20px;
+  /* bottom: -60px;
+  padding: 20px; */
+  bottom: -45px;
+  padding: 40px;
   left: 0;
   right: 0;
   text-align: center;
@@ -587,7 +580,7 @@
   padding-left: 30px;
   z-index: 9;
   /* animation: shake 0.5s ease-in-out infinite; */
-   animation: upDown 1.2s ease-in-out infinite;
+  animation: upDown 1.2s ease-in-out infinite;
 }
 /* 
 @keyframes shake {
@@ -610,7 +603,7 @@
     transform: translateX(0);
   }
 } */
- @keyframes upDown {
+@keyframes upDown {
   0% {
     transform: translateY(0);
   }
