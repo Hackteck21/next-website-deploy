@@ -17,18 +17,18 @@ import Person5 from "../../assets/images/bg/p5.jpg";
 import Slider from "react-slick";
 import Image from "next/image";
 import { motion } from "framer-motion";
-let settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  arrows: false,
-};
 
 const TeamList = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+  };
   return (
     <div>
       <section className={Styles.about_banner}>
