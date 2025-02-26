@@ -2,7 +2,6 @@
 
 .overall_header {
   background: #ffffff;
-  /* background: #ffffff; */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
@@ -16,7 +15,7 @@
 
 .banner {
   width: 100%;
-  /* background-color: #1c7abf; */
+
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -27,9 +26,7 @@
   overflow: hidden;
   background-size: cover;
 }
-.banner_heading {
-  /* padding: 200px 0; */
-}
+
 .banner_right_side {
   background: #8cc1db69;
   border-top-left-radius: 300px 300px;
@@ -37,29 +34,6 @@
   height: 100%;
   position: relative;
 }
-
-/* .left_banner_border {
-  position: relative;
-  border-radius: 20px;
-  margin: 100px 0;
-  padding-left: 30px;
-  border: 4px solid transparent; 
-  background-image: linear-gradient(white, white),
-                    linear-gradient(90deg, #ff9800, #ff00ff, #00ffff, #ff9800);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  animation: runningBorder 3s linear infinite;
-  background-size: 200% 100%;
-}
-
-@keyframes runningBorder {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-} */
 
 .test2 {
   border: 1px solid #fff;
@@ -100,40 +74,6 @@
   animation: borderAnimation 3s infinite ease-in-out;
 }
 
-/* .teste {
-  position: relative;
-  width: 150px; 
-  height: 150px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-} */
-
-/* .teste::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  border-radius: 50%;
-  border: 5px solid transparent;
-  border-top-color: #ff9800;
-  border-right-color: #fff;
-  animation: borderSpin 1.5s linear infinite;
-}
-
-@keyframes borderSpin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} */
-
 .banner_right_side::before {
   position: absolute;
   left: 0;
@@ -166,23 +106,7 @@
   margin: 0 auto;
   width: 100%;
 }
-/* .card_custome {
-  padding: 30px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transform: translateY(10px);
-  transition: all 0.3s ease-in-out;
-}
 
-.card_custome:hover {
-  background-color: #1c7abf;
-  color: #fff;
-  border-radius: 10px;
-}
-.card_custome:hover p {
-  color: #fff;
-} */
 .card_custome {
   padding: 30px;
   background-size: cover;
@@ -357,22 +281,39 @@
 /* Footer */
 .footer {
   padding: 80px;
-  background: url("https://html.kodesolution.com/2024/sotech-php/images/background/8.jpg");
+  /* background: url("https://html.kodesolution.com/2024/sotech-php/images/background/8.jpg"); */
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(28, 122, 191, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 .footer_list {
   padding-left: 0 !important;
 }
-
 .footer_list li {
-  color: #8c8f94 !important;
-  font-size: 16px;
-  font-weight: 500;
+  line-height: 21px;
   padding: 10px 0;
+  color:#d5d5d5;
 }
+.footer_list li a {
+  color: #d5d5d5;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.footer_list li a:hover {
+  color: #020202 !important;
+}
+
 .footer_logo_info {
   padding: 10px 0;
   line-height: 28px;
-  color: #8c8f94;
+  color: #fff;
   font-size: 16px;
   font-weight: 400;
 }

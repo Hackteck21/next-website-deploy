@@ -14,6 +14,7 @@ import Person2 from "../../assets/images/bg/p2.jpg";
 import Person3 from "../../assets/images/bg/p3.jpg";
 import Person4 from "../../assets/images/bg/p4.jpg";
 import Person5 from "../../assets/images/bg/p5.jpg";
+
 import Slider from "react-slick";
 import Image from "next/image";
 import { motion } from "framer-motion";

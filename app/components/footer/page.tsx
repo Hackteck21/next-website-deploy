@@ -2,16 +2,41 @@ import Image from "next/image";
 import React from "react";
 import Styles from "../../styles/header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Ellipse1 from "../../assets/images/bg/Ellipse-1.svg";
+import Ellipse2 from "../../assets/images/bg/Ellipse-2.svg";
+import Ellipse3 from "../../assets/images/bg/Ellipse-3.svg";
+import Ellipse4 from "../../assets/images/bg/Ellipse-4.svg";
 import {
   faFacebook,
   faInstagram,
   faPinterest,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { faAddressBook, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <section>
+    <section className="relative">
+      <div>
+        <div>
+          <div>
+            <Image
+              src={Ellipse1}
+              alt="ellipse"
+              priority
+              className=" absolute top-0"
+            />
+          </div>
+          <div>
+            <Image
+              src={Ellipse2}
+              alt="ellipse"
+              priority
+              className=" absolute top-0"
+            />
+          </div>
+        </div>
+      </div>
       <div className=" bg-slate-400">
         <div className={Styles.footer}>
           <div className={Styles.auto_container}>
@@ -52,39 +77,77 @@ const Footer = () => {
               </div>
               <div className="col-md-3">
                 <div>
-                  <div className="text-[18px] text-white font-bold border-b-2 border-cutomBorder pb-2">
-                    Explore
+                  <div className="text-[18px] text-white font-bold  pb-2">
+                    <span className="border-b-2 border-white"> Explore</span>
                   </div>
                   <ul className={Styles.footer_list}>
-                    <li>About Company</li>
-                    <li>Meet the Team</li>
-                    <li>News & Media</li>
-                    <li>Our Projects</li>
-                    <li>Contact</li>
+                    <li>
+                      <a href="#">About Company</a>
+                    </li>
+                    <li>
+                      <a href="#">Meet the Team</a>
+                    </li>
+                    <li>
+                      <a href="#">News & Media</a>
+                    </li>
+                    <li>
+                      <a href="#">Our Projects</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact</a>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div className="col-md-3">
-                <div className=" text-[18px] text-white font-bold border-b-2 border-cutomBorder pb-2">
-                  Contact
+                <div className=" text-[18px] text-white font-bold  pb-2">
+                  <span className="border-b-2 border-white"> Contact</span>
                 </div>
-                <ul className={Styles.footer_list}>
-                  <li>66 Road Broklyn Street, 600 New York, USA</li>
-                  <li>
-                    <a className=" text-white">needhelp@company.com</a>
-                    <div className=" text-white">+92 666 888 0000</div>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-md-3">
-                <div className=" text-[18px] text-white font-bold border-b-2 border-cutomBorder pb-2">
-                  Gallery
+                <div>
+                  <ul className={Styles.footer_list}>
+                    <li>
+                      <FontAwesomeIcon icon={faAddressBook} className=" mr-1" />
+                      66 Road Broklyn Street, 600 New York, USA
+                    </li>
+                    <li>
+                      <FontAwesomeIcon icon={faEnvelope} className=" mr-1" />{" "}
+                      needhelp@company.com
+                    </li>
+                    <li>
+                      <div>
+                        <FontAwesomeIcon icon={faPhone} className=" mr-1" />
+                        +92 666 888 0000
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
+          <div className=" text-center border-t mt-[50px]">
+            <p className=" py-[20px]">© 2024 Codetrix Technologies Pvt. Ltd.</p>
+          </div>
         </div>
       </div>
+      <div className=" ">
+        <div>
+          <Image
+            src={Ellipse3}
+            alt="ellipse"
+            priority
+            className=" absolute top-0 right-0"
+          />
+        </div>
+        <div>
+          <Image
+            src={Ellipse4}
+            alt="ellipse"
+            priority
+            className=" absolute top-0 right-0"
+          />
+        </div>
+      </div>
+      {/* Copy rights */}
     </section>
   );
 };
