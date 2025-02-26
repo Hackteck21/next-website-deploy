@@ -48,7 +48,7 @@ const ProjectDetails = () => {
       </section>
       <section className=" py-[80px]">
         <div className={Styles.auto_container}>
-          <img src="https://html.kodesolution.com/2024/sotech-php/images/resource/project-details.jpg" />
+          <img src="https://html.kodesolution.com/2024/sotech-php/images/resource/project-details.jpg" alt="ddd"/>
           <div className="row py-6">
             <div className="col-md-8 col-xl-8 col-lg-8">
               <motion.div
