@@ -6,12 +6,12 @@ import Styles from "../../styles/header.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const pathname = usePathname();
+
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [projectDropDownOpen, setProjectDropDownOpen] = useState(false);
 
@@ -72,17 +72,27 @@ const Header = () => {
                 )}
                 {isDropdownOpen && (
                   <ul
-                    className="absolute left-0 top-10  w-[13rem] bg-white shadow-lg rounded-md z-50 p-[0]"
+                    className="absolute left-[-24px] top-10  w-[16rem] bg-white shadow-lg rounded-[10px] z-50 p-[0]"
                     onMouseEnter={() => setIsDropdownOpen(true)}
                     onMouseLeave={() => setIsDropdownOpen(false)}
                   >
                     <li className="relative  border-b border-borderLight py-[6px]">
                       <Link
                         href="/pages/about"
-                        className="block px-4 py-2 text-gray-700 hover:text-customBlue no-underline"
+                        className="block px-4 py-2 text-gray-700 hover:text-customBlue no-underline font-medium"
+                        // onClick={() => setIsDropdownOpen(false)}
                       >
                         About
                       </Link>
+                      {/* <button
+                        className="block w-full text-left px-4 py-2 text-gray-700 hover:text-customBlue no-underline font-medium"
+                        onClick={() => {
+                          setIsDropdownOpen(false);
+                           window.location.href = "/pages/about"; // Instant redirect
+                        }}
+                      >
+                        About
+                      </button> */}
                     </li>
 
                     <li
@@ -92,7 +102,7 @@ const Header = () => {
                     >
                       <Link
                         href="/pages/about"
-                        className="block px-4 py-2 text-gray-700 hover:text-customBlue no-underline"
+                        className="block px-4 py-2 text-gray-700 hover:text-customBlue no-underline font-medium"
                       >
                         Projects
                         <FontAwesomeIcon
@@ -106,14 +116,14 @@ const Header = () => {
                       )}
                       {projectDropDownOpen && (
                         <ul
-                          className="absolute left-[200px] top-10  w-[13rem] bg-white shadow-lg rounded-md z-50 p-[0]"
+                          className="absolute left-[220px] top-10  w-[14rem] bg-white shadow-lg rounded-md z-50 p-[0]"
                           onMouseEnter={() => setProjectDropDownOpen(true)}
                           onMouseLeave={() => setProjectDropDownOpen(false)}
                         >
                           <li className="relative  border-b border-borderLight py-[6px]">
                             <Link
                               href="/pages/projects/projectList"
-                              className="block px-4 py-2 text-gray-700 hover:text-customBlue no-underline"
+                              className="block px-4 py-2 text-gray-700 hover:text-customBlue no-underline font-medium"
                             >
                               Project List
                             </Link>
@@ -121,7 +131,7 @@ const Header = () => {
                           <li className="relative  border-b border-borderLight py-[6px]">
                             <Link
                               href="/pages/projects/projectDetails"
-                              className="block px-4 py-2 text-gray-700 hover:text-customBlue no-underline"
+                              className="block px-4 py-2 text-gray-700 hover:text-customBlue no-underline font-medium"
                             >
                               Project Details
                             </Link>
@@ -133,7 +143,7 @@ const Header = () => {
                     <li className="relative border-b border-borderLight py-[6px]">
                       <Link
                         href="/pages/team"
-                        className="block px-4 py-2 text-gray-700 hover:hover:text-customBlue no-underline"
+                        className="block px-4 py-2 text-gray-700 hover:hover:text-customBlue no-underline font-medium"
                       >
                         Team
                       </Link>
@@ -142,7 +152,7 @@ const Header = () => {
                     <li className="relative border-b border-borderLight py-[6px]">
                       <Link
                         href="/pages/service/serviceList"
-                        className="block px-4 py-2 text-gray-700 hover:hover:text-customBlue no-underline"
+                        className="block px-4 py-2 text-gray-700 hover:hover:text-customBlue no-underline font-medium"
                       >
                         Service
                       </Link>
@@ -150,7 +160,7 @@ const Header = () => {
                     <li className="relative border-b border-borderLight py-[6px]">
                       <Link
                         href="/pages/testimonials"
-                        className="block px-4 py-2 text-gray-700 hover:hover:text-customBlue no-underline"
+                        className="block px-4 py-2 text-gray-700 hover:hover:text-customBlue no-underline font-medium"
                       >
                         Testimonial
                       </Link>
