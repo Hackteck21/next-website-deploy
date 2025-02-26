@@ -2,6 +2,7 @@ import React from "react";
 import Styles from "../../styles/header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faChevronCircleRight,
   faEnvelope,
   faLocationDot,
   faPhone,
@@ -15,7 +16,17 @@ const Contact = () => {
           <div className="text-[60px] font-extrabold text-white relative z-10">
             Contact
           </div>
-          <div className="text-white relative">Home Pages Projects</div>
+          <div className="text-white relative">
+            Home{" "}
+            <span>
+              <FontAwesomeIcon icon={faChevronCircleRight} className=" mx-2" />
+            </span>
+            Pages
+            <span>
+              <FontAwesomeIcon icon={faChevronCircleRight} className=" mx-2" />
+            </span>
+            Contacts
+          </div>
         </div>
       </section>
       <section>

@@ -12,6 +12,8 @@ import Ellipse1 from "../../assets/images/bg/Ellipse-1.svg";
 import Ellipse2 from "../../assets/images/bg/Ellipse-2.svg";
 import Ellipse3 from "../../assets/images/bg/Ellipse-3.svg";
 import Ellipse4 from "../../assets/images/bg/Ellipse-4.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faStar } from "@fortawesome/free-solid-svg-icons";
 const Testimonials = () => {
@@ -25,7 +27,23 @@ const Testimonials = () => {
             <div className="text-[60px] font-extrabold text-white relative z-10">
               Testimonial
             </div>
-            <div className="text-white relative">{`Home > Pages > Testimonial`}</div>
+            <div className="text-white relative">
+              Home{" "}
+              <span>
+                <FontAwesomeIcon
+                  icon={faChevronCircleRight}
+                  className=" mx-2"
+                />
+              </span>
+              Pages
+              <span>
+                <FontAwesomeIcon
+                  icon={faChevronCircleRight}
+                  className=" mx-2"
+                />
+              </span>
+              Testimonial
+            </div>
           </div>
         </section>
       )}

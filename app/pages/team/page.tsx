@@ -18,6 +18,10 @@ import Person5 from "../../assets/images/bg/p5.jpg";
 import Slider from "react-slick";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import {
+  faChevronCircleDown,
+  faChevronCircleRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 const TeamList = () => {
   const settings = {
@@ -44,7 +48,23 @@ const TeamList = () => {
             <div className="text-[60px] font-extrabold text-white relative z-10">
               Team Grid
             </div>
-            <div className="text-white relative">{`Home > Pages > Team Grid`}</div>
+            <div className="text-white relative">
+              Home{" "}
+              <span>
+                <FontAwesomeIcon
+                  icon={faChevronCircleRight}
+                  className=" mx-2"
+                />
+              </span>
+              Pages
+              <span>
+                <FontAwesomeIcon
+                  icon={faChevronCircleRight}
+                  className=" mx-2"
+                />
+              </span>
+              Team Grid
+            </div>
           </div>
         </motion.div>
       </section>

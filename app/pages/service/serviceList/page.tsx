@@ -9,6 +9,8 @@ import {
   Uxdesign,
 } from "@/app/Icons/IconsExport";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 const ServiceList = () => {
   return (
     <div>
@@ -22,6 +24,23 @@ const ServiceList = () => {
         >
           <div className={Styles.auto_container}>
             <div className="text-[60px] font-extrabold text-white relative z-10">
+              Services
+            </div>
+            <div className="text-white relative">
+              Home{" "}
+              <span>
+                <FontAwesomeIcon
+                  icon={faChevronCircleRight}
+                  className=" mx-2"
+                />
+              </span>
+              Pages
+              <span>
+                <FontAwesomeIcon
+                  icon={faChevronCircleRight}
+                  className=" mx-2"
+                />
+              </span>
               Services
             </div>
           </div>

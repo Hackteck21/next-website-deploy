@@ -9,6 +9,7 @@ import {
   faPinterest,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 
 const ProjectDetails = () => {
   return (
@@ -25,7 +26,23 @@ const ProjectDetails = () => {
             <div className="text-[60px] font-extrabold text-white relative z-10">
               Project Details
             </div>
-            <div className="text-white relative">{`Home > Pages > ProjectsDetails`}</div>
+            <div className="text-white relative">
+              Home{" "}
+              <span>
+                <FontAwesomeIcon
+                  icon={faChevronCircleRight}
+                  className=" mx-2"
+                />
+              </span>
+              Pages
+              <span>
+                <FontAwesomeIcon
+                  icon={faChevronCircleRight}
+                  className=" mx-2"
+                />
+              </span>
+              Project Details
+            </div>
           </div>
         </motion.div>
       </section>
