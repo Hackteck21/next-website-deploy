@@ -128,7 +128,7 @@ export default function Home() {
                         className={Styles.white_img}
                       />
                       <div className="ml-4 font-bold text-[24px] text-white">
-                        30+{" "}
+                        01+{" "}
                         <div className=" text-[16px] font-medium">
                           {" "}
                           Years of experience
