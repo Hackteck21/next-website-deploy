@@ -19,7 +19,6 @@ import Slider from "react-slick";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {
-  faChevronCircleDown,
   faChevronCircleRight,
 } from "@fortawesome/free-solid-svg-icons";
 
