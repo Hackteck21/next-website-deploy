@@ -24,7 +24,7 @@ const Testimonials = () => {
       {pathname === "/pages/testimonials" && (
         <section className={Styles.about_banner}>
           <div className={Styles.auto_container}>
-            <div className="text-[60px] font-extrabold text-white relative z-10">
+            <div className="text-[60px] font-extrabold text-white relative z-10 ">
               Testimonial
             </div>
             <div className="text-white relative">
@@ -50,7 +50,7 @@ const Testimonials = () => {
 
       <section className={`${Styles.service_overall_bg} relative`}>
         {pathname !== "/pages/testimonials" && (
-          <h1 className=" text-center font-bold text-[40px] pt-10">
+          <h1 className=" text-center font-bold text-[40px] pt-10 text-customBlackText">
             Testimonials
           </h1>
         )}
@@ -89,8 +89,10 @@ const Testimonials = () => {
                       />
                     </div>
                     <div className=" pt-[30px] text-center">
-                      <div className=" text-[20] font-bold">Amelia Millar</div>
-                      <p className=" text-lightTextColor text-[14px]">
+                      <div className=" text-[20] font-bold text-customBlackText">
+                        Amelia Millar
+                      </div>
+                      <p className=" text-lightTextColor text-[14px] font-medium">
                         Designer
                       </p>
                     </div>
@@ -115,8 +117,10 @@ const Testimonials = () => {
                       className=" absolute top-[-50px] left-[130px] rounded-[50%] h-[100px]"
                     />
                     <div className=" pt-[30px] text-center">
-                      <div className=" text-[20] font-bold">Amelia Millar</div>
-                      <p className=" text-lightTextColor text-[14px]">
+                      <div className=" text-[20] font-bold text-customBlackText">
+                        Amelia Millar
+                      </div>
+                      <p className=" text-lightTextColor text-[14px] font-medium">
                         Designer
                       </p>
                     </div>
@@ -142,8 +146,10 @@ const Testimonials = () => {
                       className=" absolute top-[-50px] left-[130px] rounded-[50%] h-[100px]"
                     />
                     <div className=" pt-[30px] text-center">
-                      <div className=" text-[20] font-bold">Amelia Millar</div>
-                      <p className=" text-lightTextColor text-[14px]">
+                      <div className=" text-[20] font-bold text-customBlackText">
+                        Amelia Millar
+                      </div>
+                      <p className=" text-lightTextColor text-[14px] font-medium">
                         Designer
                       </p>
                     </div>

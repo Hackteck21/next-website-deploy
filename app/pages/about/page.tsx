@@ -90,7 +90,7 @@ const About = () => {
                 <div className=" text-[16px] font-bold text-customBlue pb-4">
                   WHO WE ARE _____
                 </div>
-                <div className=" text-[50px] font-bold leading-[60px] pb-5  mr-20">
+                <div className=" text-[50px] font-bold leading-[60px] pb-5  mr-20 text-customBlackText">
                   We provide best design Solution in town
                 </div>
                 <p className=" text-[16px]  font-normal text-customBrown leading-2 pb-4">
@@ -105,7 +105,7 @@ const About = () => {
                       height={16}
                       className=" text-customBlue"
                     />{" "}
-                    <div className=" ml-2 font-medium text-[16px]">
+                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor">
                       Deliver Perfect Solution for business
                     </div>
                   </div>
@@ -115,7 +115,7 @@ const About = () => {
                       height={16}
                       className=" text-customBlue"
                     />{" "}
-                    <div className=" ml-2 font-medium text-[16px]">
+                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor">
                       Deliver Perfect Solution for business
                     </div>
                   </div>
@@ -125,7 +125,7 @@ const About = () => {
                       height={16}
                       className=" text-customBlue"
                     />{" "}
-                    <div className=" ml-2 font-medium text-[16px]">
+                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor">
                       Deliver Perfect Solution for business
                     </div>
                   </div>
@@ -138,7 +138,7 @@ const About = () => {
                       className="border-2 w-[80px] h-[80px] rounded-[50%]"
                     />
                     <div className=" ml-3">
-                      <div className=" font-bold text-[16px]">
+                      <div className=" font-bold text-[16px] text-customBlackText">
                         Jessica brown
                       </div>
                       <div className=" font-medium text-customBrown text-[14px]">

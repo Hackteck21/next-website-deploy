@@ -150,7 +150,7 @@ export default function Home() {
                 <div className=" text-[16px] font-bold text-customBlue pb-4">
                   WHO WE ARE _____
                 </div>
-                <div className=" text-[50px] font-bold leading-[60px] pb-5  mr-20">
+                <div className=" text-[50px] font-bold leading-[60px] pb-5  mr-20 text-customBlackText">
                   We provide best design Solution in town
                 </div>
                 <p className=" text-[16px]  font-normal text-customBrown leading-2 pb-4">
@@ -165,7 +165,7 @@ export default function Home() {
                       height={16}
                       className=" text-customBlue"
                     />{" "}
-                    <div className=" ml-2 font-medium text-[16px]">
+                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor">
                       Deliver Perfect Solution for business
                     </div>
                   </div>
@@ -175,7 +175,7 @@ export default function Home() {
                       height={16}
                       className=" text-customBlue"
                     />{" "}
-                    <div className=" ml-2 font-medium text-[16px]">
+                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor">
                       Deliver Perfect Solution for business
                     </div>
                   </div>
@@ -185,7 +185,7 @@ export default function Home() {
                       height={16}
                       className=" text-customBlue"
                     />{" "}
-                    <div className=" ml-2 font-medium text-[16px]">
+                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor">
                       Deliver Perfect Solution for business
                     </div>
                   </div>
@@ -198,7 +198,7 @@ export default function Home() {
                       className="border-2 w-[80px] h-[80px] rounded-[50%]"
                     />
                     <div className=" ml-3">
-                      <div className=" font-bold text-[16px]">
+                      <div className=" font-bold text-[16px] text-customBlackText">
                         Jessica brown
                       </div>
                       <div className=" font-medium text-customBrown text-[14px]">
@@ -266,7 +266,7 @@ export default function Home() {
                       className={`${Styles.card_img}`}
                     />
                   </div>
-                  <div className=" font-bold text-[17px] text-center px-4 py-3 ">
+                  <div className=" font-bold text-[17px] text-center px-4 py-3 text-customBlackText">
                     Website Development
                   </div>
                   <p className=" text-center text-[14px] font-medium text-white">
@@ -294,7 +294,7 @@ export default function Home() {
                       className={`${Styles.card_img}`}
                     />
                   </div>
-                  <div className=" font-bold text-[17px] text-center px-4 py-3 ">
+                  <div className=" font-bold text-[17px] text-center px-4 py-3 text-customBlackText">
                     UI/UX Design
                   </div>
                   <p className=" text-center text-[14px] font-medium text-white">
@@ -322,7 +322,7 @@ export default function Home() {
                       className={`${Styles.card_img}`}
                     />
                   </div>
-                  <div className=" font-bold text-[17px] text-center px-4 py-3 ">
+                  <div className=" font-bold text-[17px] text-center px-4 py-3 text-customBlackText">
                     Support Management
                   </div>
                   <p className=" text-center text-[14px] font-medium text-white">
@@ -350,7 +350,7 @@ export default function Home() {
                       className={`${Styles.card_img}`}
                     />
                   </div>
-                  <div className=" font-bold text-[17px] text-center px-4 py-3 ">
+                  <div className=" font-bold text-[17px] text-center px-4 py-3 text-customBlackText">
                     Product Development
                   </div>
                   <p className=" text-center text-[14px] font-medium text-white">
@@ -378,7 +378,7 @@ export default function Home() {
                       className={`${Styles.card_img}`}
                     />
                   </div>
-                  <div className=" font-bold text-[17px] text-center px-4 py-3 ">
+                  <div className=" font-bold text-[17px] text-center px-4 py-3 text-customBlackText">
                     Website Development
                   </div>
                   <p className=" text-center text-[14px] font-medium text-white">
@@ -406,7 +406,7 @@ export default function Home() {
                       className={`${Styles.card_img}`}
                     />
                   </div>
-                  <div className=" font-bold text-[17px] text-center px-4 py-3 ">
+                  <div className=" font-bold text-[17px] text-center px-4 py-3 text-customBlackText">
                     Website Development
                   </div>
                   <p className=" text-center text-[14px] font-medium text-white">
@@ -441,7 +441,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className=" text-center font-extrabold text-[28px] ">
+            <div className=" text-center font-extrabold text-[28px] text-customBlackText">
               Our Clients
             </div>
           </motion.div>
@@ -451,7 +451,7 @@ export default function Home() {
       <section className=" relative">
         <div className={Styles.auto_container}>
           <div>
-            <h1 className=" font-bold text-[30px] text-center tracking-[2px] capitalize">
+            <h1 className=" font-bold text-[30px] text-center tracking-[2px] capitalize text-customBlackText">
               You Can See our clients feedback
               <span className=" text-customBlue"> What You Say?</span>
             </h1>
@@ -471,7 +471,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <p className="our-client-para">
+                    <p className="our-client-para text-customBlackText">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Facere, doloremque voluptate. Velit unde commodi,
                       distinctio necessitatibus adipisci sint incidunt dolorem
@@ -482,7 +482,9 @@ export default function Home() {
                       <div className=" font-bold text-[16px] text-customBlue pt-[10px]">
                         Smirthi Manthana
                       </div>
-                      <p className=" font-medium text-[14px]">CEO of company</p>
+                      <p className=" font-medium text-[14px] text-lightTextColor">
+                        CEO of company
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -500,7 +502,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <p className="our-client-para">
+                    <p className="our-client-para text-customBlackText">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Facere, doloremque voluptate. Velit unde commodi,
                       distinctio necessitatibus adipisci sint incidunt dolorem
@@ -511,7 +513,9 @@ export default function Home() {
                       <div className=" font-bold text-[16px] text-customBlue">
                         Smirthi Manthana
                       </div>
-                      <p className=" font-medium text-[14px]">CEO of company</p>
+                      <p className=" font-medium text-[14px] text-lightTextColor">
+                        CEO of company
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -529,7 +533,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <p className="our-client-para">
+                    <p className="our-client-para text-customBlackText">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Facere, doloremque voluptate. Velit unde commodi,
                       distinctio necessitatibus adipisci sint incidunt dolorem
@@ -540,7 +544,7 @@ export default function Home() {
                       <div className=" font-bold text-[16px] text-customBlue">
                         Smirthi Manthana
                       </div>
-                      <p className=" font-medium text-[14px]">CEO of company</p>
+                      <p className=" font-medium text-[14px] text-lightTextColor">CEO of company</p>
                     </div>
                   </div>
                 </div>

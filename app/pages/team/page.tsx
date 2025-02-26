@@ -78,7 +78,7 @@ const TeamList = () => {
             viewport={{ once: true }}
           >
             <div className=" py-10">
-              <h1 className=" font-bold text-[30px] text-center tracking-[2px] capitalize">
+              <h1 className=" font-bold text-[30px] text-center tracking-[2px] capitalize text-black">
                 Meet Our Expert{" "}
                 <span className=" text-customBlue">team member</span> will ready
                 <div>for your service</div>
@@ -106,7 +106,7 @@ const TeamList = () => {
                       />
                     </div>
                     <div className={Styles.team_card}>
-                      <div className=" font-bold text-[16px] uppercase pb-2">
+                      <div className=" font-bold text-[16px] uppercase pb-2 text-customBlackText">
                         Kevin Martin
                       </div>
                       <div className=" font-medium text-[14px] uppercase text-lightTextColor">
@@ -139,7 +139,7 @@ const TeamList = () => {
                       />
                     </div>
                     <div className={Styles.team_card}>
-                      <div className=" font-bold text-[16px] uppercase pb-2">
+                      <div className=" font-bold text-[16px] uppercase pb-2 text-customBlackText">
                         Aleesha Brown
                       </div>
                       <div className=" font-medium text-[14px] uppercase text-lightTextColor">
@@ -172,7 +172,7 @@ const TeamList = () => {
                       />
                     </div>
                     <div className={Styles.team_card}>
-                      <div className=" font-bold text-[16px] uppercase pb-2">
+                      <div className=" font-bold text-[16px] uppercase pb-2 text-customBlackText">
                         Sarah Albert
                       </div>
                       <div className=" font-medium text-[14px] uppercase text-lightTextColor">
@@ -205,7 +205,7 @@ const TeamList = () => {
                       />
                     </div>
                     <div className={Styles.team_card}>
-                      <div className=" font-bold text-[16px] uppercase pb-2">
+                      <div className=" font-bold text-[16px] uppercase pb-2 text-customBlackText">
                         Aleesha Brown
                       </div>
                       <div className=" font-medium text-[14px] uppercase text-lightTextColor">
@@ -238,7 +238,7 @@ const TeamList = () => {
                       />
                     </div>
                     <div className={Styles.team_card}>
-                      <div className=" font-bold text-[16px] uppercase pb-2">
+                      <div className=" font-bold text-[16px] uppercase pb-2 text-customBlackText">
                         Aleesha Brown
                       </div>
                       <div className=" font-medium text-[14px] uppercase text-lightTextColor">

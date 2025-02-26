@@ -58,7 +58,7 @@ const ProjectDetails = () => {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                <h1 className=" font-bold text-[24px] ">
+                <h1 className=" font-bold text-[24px] text-customBlackText">
                   Here to Know About This Project
                 </h1>
               </motion.div>
@@ -105,7 +105,7 @@ const ProjectDetails = () => {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                <h1 className=" font-bold text-[24px] pb-2 pt-4">
+                <h1 className=" font-bold text-[24px] pb-2 pt-4 text-customBlackText">
                   Project Challenges
                 </h1>
               </motion.div>
@@ -131,7 +131,7 @@ const ProjectDetails = () => {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                <h1 className=" font-bold text-[24px] pb-2 pt-4">
+                <h1 className=" font-bold text-[24px] pb-2 pt-4 text-customBlackText">
                   Organic Food Supply
                 </h1>
               </motion.div>

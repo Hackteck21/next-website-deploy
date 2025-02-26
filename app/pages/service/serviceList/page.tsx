@@ -59,7 +59,7 @@ const ServiceList = () => {
               <div className=" text-customBlue text-[16] font-medium">
                 What We Do
               </div>
-              <div className=" text-[30px] font-extrabold">
+              <div className=" text-[30px] font-extrabold text-customBlackText">
                 Provide the Best Consulting in This Industry
               </div>
             </div>

@@ -37,7 +37,9 @@ const Contact = () => {
                 <div className="text-[13px] font-bold text-customBlue uppercase">
                   Send us email
                 </div>
-                <div className=" font-bold text-[40px]">Feel free to write</div>
+                <div className=" font-bold text-[40px] text-customBlackText">
+                  Feel free to write
+                </div>
               </div>
               <div className="py-[40px]">
                 <div className="row">
@@ -93,7 +95,7 @@ const Contact = () => {
                 <div className="text-[13px] font-bold text-customBlue uppercase">
                   Send us email
                 </div>
-                <div className=" font-bold text-[40px]">
+                <div className=" font-bold text-[40px] text-customBlackText">
                   Get in touch with us
                 </div>
               </div>
@@ -111,7 +113,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className=" ml-10">
-                    <div className=" font-bold text-[16px] pb-2">
+                    <div className=" font-bold text-[16px] pb-2 text-customBlackText">
                       Have any question
                     </div>
                     <div className=" font-medium text-[14px]  text-lightTextColor">
@@ -127,7 +129,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className=" ml-10">
-                    <div className=" font-bold text-[16px]  pb-2">
+                    <div className=" font-bold text-[16px]  pb-2 text-customBlackText">
                       Write email
                     </div>
                     <div className=" font-medium text-[14px]  text-lightTextColor">
@@ -143,7 +145,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className=" ml-10">
-                    <div className=" font-bold text-[16px]  pb-2">
+                    <div className=" font-bold text-[16px]  pb-2 text-customBlackText">
                       Visit anytime
                     </div>
                     <div className=" font-medium text-[14px]  text-lightTextColor">

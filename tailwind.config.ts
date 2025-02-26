@@ -20,6 +20,7 @@ export default {
         lightTextColor: "#6a6f78",
         cardbg: "#f5f5f5",
         btnHover: "#222429",
+        customBlackText: "#222429",
       },
       boxShadow: {
         customeBrow: "0 10px 60px rgba(0, 0, 0, 0.1)",
