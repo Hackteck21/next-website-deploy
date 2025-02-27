@@ -56,11 +56,17 @@ export default function Home() {
                 {/* Left Column (Text Section) */}
                 <div className="col-md-6 col-lg-6 col-sm-12 flex flex-col justify-center items-center text-center md:items-start md:text-left">
                   <div className={`${Styles.banner_heading} text-left`}>
-                    <div className=" uppercase pb-5">
-                      <span className=" border p-2 font-bold text-[16px] text-white">
+                    {/* <div className=" uppercase pb-5">
+                      <span className=" border p-2 font-bold text-[16px] text-white tracking-[2px] ">
+                        Welcome to the best Codetrix
+                      </span>
+                    </div> */}
+                    <div className="uppercase pb-5">
+                      <span className="relative inline-block p-2 font-bold text-[16px] text-white tracking-[2px] border border-white animate-borderAnimation">
                         Welcome to the best Codetrix
                       </span>
                     </div>
+
                     <div className="text-white text-[65px] font-extrabold pb-9 leading-[70px] tracking-[1px] text-left">
                       The Developing Your Ideas Into Reality
                     </div>

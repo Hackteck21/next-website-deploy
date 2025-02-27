@@ -67,3 +67,24 @@
   margin-right: 30px;
   max-width: 140px !important;
 }
+
+@keyframes borderAnimation {
+  0% {
+    border-color: #ff5733;
+    box-shadow: 0 0 5px #ff5733;
+  }
+  50% {
+    border-color: #33ff57;
+    box-shadow: 0 0 5px #33ff57;
+  }
+  100% {
+    border-color: #5733ff;
+    box-shadow: 0 0 5px #5733ff;
+  }
+}
+
+/* Apply the animation */
+.animate-borderAnimation {
+  animation: borderAnimation 2s infinite alternate;
+}
+
