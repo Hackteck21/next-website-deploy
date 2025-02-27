@@ -51,7 +51,19 @@
 }
 .client-marquee {
   background-color: #fff;
-
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 10px 30px;
+}
+.marquee-image-shadow {
+  background: #fff;
+  padding: 14px 10px;
+  margin-right: 5px;
+  
+}
+.marqu-box-shadow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  margin-right: 30px;
+  max-width: 140px !important;
 }

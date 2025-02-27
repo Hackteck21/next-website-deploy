@@ -10,7 +10,7 @@ import bannerImg1 from "./assets/images/bg/banner_right.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import "animate.css";
-import { Codetrix, Startup, Truefinedge } from "./Icons/IconsExport";
+import { Startup, Truefinedge } from "./Icons/IconsExport";
 import { motion } from "framer-motion";
 import Presentation from "./assets/images/bg/presentation.jpg";
 import Person4 from "./assets/images/bg/p4.jpg";
@@ -22,6 +22,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Testimonials from "./pages/testimonials/page";
 import bgLayer from "./assets/images/bg/Element.svg";
+import Marquee from "react-fast-marquee";
 
 export default function Home() {
   const settings = {
@@ -544,7 +545,9 @@ export default function Home() {
                       <div className=" font-bold text-[16px] text-customBlue">
                         Smirthi Manthana
                       </div>
-                      <p className=" font-medium text-[14px] text-lightTextColor">CEO of company</p>
+                      <p className=" font-medium text-[14px] text-lightTextColor">
+                        CEO of company
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -558,48 +561,112 @@ export default function Home() {
       </section>
 
       <section>
-        <div className=" py-5 client-marquee">
-          <div
-            className={`${Styles.auto_container} flex justify-between items-center`}
-          >
-            <div>
-              <Image
-                src={Truefinedge}
-                alt="client"
-                priority
-                width={200}
-                height={200}
-              />
-            </div>
-            <div>
-              <Image
-                src={Codetrix}
-                alt="client"
-                priority
-                width={200}
-                height={200}
-              />
-            </div>
+        <div className=" py-5 client-marquee ">
+          <Marquee>
+            <div className={`${Styles.auto_container} flex items-center mx-5 `}>
+              <div className="marquee-image-shadow">
+                <Image
+                  src={Truefinedge}
+                  alt="client"
+                  priority
+                  width={200}
+                  height={200}
+                  className="marqu-box-shadow"
+                />
+              </div>
+              <div className="marquee-image-shadow">
+                <Image
+                  src={Truefinedge}
+                  alt="client"
+                  priority
+                  width={200}
+                  height={200}
+                  className="marqu-box-shadow"
+                />
+              </div>
 
-            <div>
-              <Image
-                src={Truefinedge}
-                alt="client"
-                priority
-                width={200}
-                height={200}
-              />
+              <div className="marquee-image-shadow">
+                <Image
+                  src={Truefinedge}
+                  alt="client"
+                  priority
+                  width={200}
+                  height={200}
+                  className="marqu-box-shadow"
+                />
+              </div>
+              <div className="marquee-image-shadow">
+                <Image
+                  src={Truefinedge}
+                  alt="client"
+                  priority
+                  width={200}
+                  height={200}
+                  className="marqu-box-shadow"
+                />
+              </div>
+              <div className="marquee-image-shadow">
+                <Image
+                  src={Truefinedge}
+                  alt="client"
+                  priority
+                  width={200}
+                  height={200}
+                  className="marqu-box-shadow"
+                />
+              </div>
+              <div className="marquee-image-shadow">
+                <Image
+                  src={Truefinedge}
+                  alt="client"
+                  priority
+                  width={200}
+                  height={200}
+                  className="marqu-box-shadow"
+                />
+              </div>
+              <div className="marquee-image-shadow">
+                <Image
+                  src={Truefinedge}
+                  alt="client"
+                  priority
+                  width={200}
+                  height={200}
+                  className="marqu-box-shadow"
+                />
+              </div>
+              <div className="marquee-image-shadow">
+                <Image
+                  src={Truefinedge}
+                  alt="client"
+                  priority
+                  width={200}
+                  height={200}
+                  className="marqu-box-shadow"
+                />
+              </div>
+              <div className="marquee-image-shadow">
+                <Image
+                  src={Truefinedge}
+                  alt="client"
+                  priority
+                  width={200}
+                  height={200}
+                  className="marqu-box-shadow"
+                />
+              </div>
+              <div className="marquee-image-shadow">
+                <Image
+                  src={Truefinedge}
+                  alt="client"
+                  priority
+                  width={200}
+                  height={200}
+                  className="marqu-box-shadow"
+                />
+              </div>
             </div>
-            <div>
-              <Image
-                src={Codetrix}
-                alt="client"
-                priority
-                width={200}
-                height={200}
-              />
-            </div>
-          </div>
+          </Marquee>
         </div>
       </section>
 

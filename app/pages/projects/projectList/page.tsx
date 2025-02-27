@@ -24,7 +24,7 @@ const ProjectList = () => {
           </div>
         </div>
       </section>
-      <section className=" py-[80px]">
+      {/* <section className=" py-[80px]">
         <div className={Styles.auto_container}>
           <div className="row ">
             <div className="col-lg-4 col-md-6 col-sm-12">
@@ -112,6 +112,11 @@ const ProjectList = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section> */}
+      <section>
+        <div className={Styles.auto_container}>
+          <h1 className=" text-center font-bold py-10 text-[30px]">Comeing Soon</h1>
         </div>
       </section>
     </div>
