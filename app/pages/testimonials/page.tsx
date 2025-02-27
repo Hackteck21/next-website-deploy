@@ -60,7 +60,7 @@ const Testimonials = () => {
               src={Ellipse1}
               alt="ellipse"
               priority
-              className=" absolute top-0"
+              className=" absolute top-0 testimonials-circle-design-1"
             />
           </div>
           <div>
@@ -68,7 +68,7 @@ const Testimonials = () => {
               src={Ellipse2}
               alt="ellipse"
               priority
-              className=" absolute top-0"
+              className=" absolute top-0 testimonials-circle-design-2"
             />
           </div>
         </div>
@@ -165,16 +165,21 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-        <div className=" absolute right-0 top-0">
+        <div className="">
           <div>
-            <Image src={Ellipse3} alt="ellipse" priority />
+            <Image
+              src={Ellipse3}
+              alt="ellipse"
+              priority
+              className=" absolute top-0 right-0 testimonials-circle-design-3"
+            />
           </div>
           <div>
             <Image
               src={Ellipse4}
               alt="ellipse"
               priority
-              className=" absolute top-0 right-0"
+              className=" absolute top-0 right-0 testimonials-circle-design-4"
             />
           </div>
         </div>

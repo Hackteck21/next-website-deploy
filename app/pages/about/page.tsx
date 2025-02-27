@@ -49,29 +49,31 @@ const About = () => {
 
       <section className=" py-[80px]">
         <div className={Styles.auto_container}>
-          <motion.div
-            className="w-[100%]  rounded-lg mb-10"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            <div className="row ">
-              <div className="content-column col-xl-6 col-lg-7 col-md-12 col-sm-12 order-lg-2 wow fadeInRight animated relative">
-                <div className={Styles.banner_left_2}>
+          <div className="row ">
+            <div className=" col-md-6 col-lg-6 col-sm-12 relative">
+              <motion.div
+                className="w-[100%]  rounded-lg mb-10"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <div
+                  className={`${Styles.banner_left_2} responsive-representation-left`}
+                >
                   <div className="about-page">
                     <Image
                       src={Presentation}
                       alt="ff"
                       priority
-                      className=" h-[600px] w-[500px]"
+                      className=" absolute p-[6rem] bottom-[-96px] "
                     />
                   </div>
                 </div>
 
-                <div className=" absolute top-[160px] right-0 rounded-md shadow-customeBrow  bg-customBlue">
+                <div className=" absolute top-[172px] right-0 rounded-md shadow-customeBrow  bg-customBlue responsive-years">
                   <div>
-                    <div className=" flex items-center p-[30px]">
+                    <div className=" flex items-center p-[30px] responsive-year-pds">
                       <Image
                         src={Startup}
                         alt="startup"
@@ -79,7 +81,7 @@ const About = () => {
                         className={Styles.white_img}
                       />
                       <div className="ml-4 font-bold text-[24px] text-white">
-                        30+{" "}
+                        01+{" "}
                         <div className=" text-[16px] font-medium">
                           {" "}
                           Years of experience
@@ -88,15 +90,23 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className=" content-column col-xl-6 col-lg-7 col-md-12 col-sm-12 order-lg-2 wow fadeInRight animated pl-70">
-                <div className=" text-[16px] font-bold text-customBlue pb-4">
+              </motion.div>
+            </div>
+            <div className=" col-md-6 col-lg-6 col-sm-12 relative pl-70">
+              <motion.div
+                className="w-[100%]  rounded-lg mb-10"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <div className=" text-[16px] font-bold text-customBlue pb-4 ">
                   WHO WE ARE _____
                 </div>
-                <div className=" text-[50px] font-bold leading-[60px] pb-5  mr-20 text-customBlackText">
+                <div className=" text-[50px] font-bold leading-[60px] pb-5  mr-20 text-customBlackText responsive-representation">
                   We provide best design Solution in town
                 </div>
-                <p className=" text-[16px]  font-normal text-customBrown leading-2 pb-4">
+                <p className=" text-[16px]  font-normal text-customBrown leading-2 pb-4 responsive-text-2">
                   We provide a diverse array of systems, each tailored to
                   streamline your operations and enhance productivity. Whether
                   you require assistance with data process automation need.
@@ -108,7 +118,7 @@ const About = () => {
                       height={16}
                       className=" text-customBlue"
                     />{" "}
-                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor">
+                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor responsive-text">
                       Deliver Perfect Solution for business
                     </div>
                   </div>
@@ -118,7 +128,7 @@ const About = () => {
                       height={16}
                       className=" text-customBlue"
                     />{" "}
-                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor">
+                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor responsive-text">
                       Deliver Perfect Solution for business
                     </div>
                   </div>
@@ -128,7 +138,7 @@ const About = () => {
                       height={16}
                       className=" text-customBlue"
                     />{" "}
-                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor">
+                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor responsive-text">
                       Deliver Perfect Solution for business
                     </div>
                   </div>
@@ -156,9 +166,9 @@ const About = () => {
                     </button>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

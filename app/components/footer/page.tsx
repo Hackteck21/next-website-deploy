@@ -71,7 +71,7 @@ const Footer = () => {
               src={Ellipse1}
               alt="ellipse"
               priority
-              className=" absolute top-0"
+              className=" absolute top-0 footer-circle-design-1"
             />
           </div>
           <div>
@@ -79,7 +79,7 @@ const Footer = () => {
               src={Ellipse2}
               alt="ellipse"
               priority
-              className=" absolute top-0"
+              className=" absolute top-0 footer-circle-design-2"
             />
           </div>
         </div>
@@ -172,7 +172,7 @@ const Footer = () => {
             </div>
           </div>
           <div className=" text-center border-t mt-[50px]">
-            <p className=" py-[20px]">© 2024 Codetrix Technologies Pvt. Ltd.</p>
+            <p className=" pt-[15px]">© 2024 Codetrix Technologies Pvt. Ltd.</p>
           </div>
         </div>
       </div>
@@ -182,7 +182,7 @@ const Footer = () => {
             src={Ellipse3}
             alt="ellipse"
             priority
-            className=" absolute top-0 right-0"
+            className=" absolute top-0 right-0 footer-circle-design-3"
           />
         </div>
         <div>
@@ -190,7 +190,7 @@ const Footer = () => {
             src={Ellipse4}
             alt="ellipse"
             priority
-            className=" absolute top-0 right-0"
+            className=" absolute top-0 right-0 footer-circle-design-4"
           />
         </div>
       </div>

@@ -22,7 +22,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Testimonials from "./pages/testimonials/page";
 import bgLayer from "./assets/images/bg/Element.svg";
-import Marquee from "react-fast-marquee";
 
 export default function Home() {
   const settings = {
@@ -62,15 +61,15 @@ export default function Home() {
                       </span>
                     </div> */}
                     <div className="uppercase pb-5">
-                      <span className="relative inline-block p-2 font-bold text-[16px] text-white tracking-[2px] border border-white animate-borderAnimation">
+                      <span className="relative inline-block p-2 font-bold text-[16px] text-white tracking-[2px] border border-white animate-borderAnimation responsive-text">
                         Welcome to the best Codetrix
                       </span>
                     </div>
 
-                    <div className="text-white text-[65px] font-extrabold pb-9 leading-[70px] tracking-[1px] text-left">
+                    <div className="text-white text-[65px] font-extrabold pb-9 leading-[70px] tracking-[1px] text-left responsive-heading">
                       The Developing Your Ideas Into Reality
                     </div>
-                    <p className="text-white">
+                    <p className="text-white responsive-text">
                       We provide custom software solutions for any industry.
                       Creating high-value software and technology for your
                       business.
@@ -89,7 +88,9 @@ export default function Home() {
 
                 {/* Right Column (Image Section) */}
                 <div className="col-md-6 col-lg-6 col-sm-12 flex justify-center items-center relative">
-                  <div className={`${Styles.left_banner_border}`}>
+                  <div
+                    className={`${Styles.left_banner_border} responsive-rigth-banner-card`}
+                  >
                     <Image src={bannerImg1} priority alt="bannerImg1" />
                   </div>
                   <div className={Styles.banner_right_card}></div>
@@ -106,7 +107,7 @@ export default function Home() {
       <section className=" py-[80px]">
         <div className={Styles.auto_container}>
           <div className="row ">
-            <div className="content-column col-xl-6 col-lg-7 col-md-12 col-sm-12 order-lg-2 wow fadeInRight animated relative">
+            <div className=" col-md-6 col-lg-6 col-sm-12 relative">
               <motion.div
                 className="w-[100%]  rounded-lg mb-10"
                 initial={{ opacity: 0, y: 50 }}
@@ -114,20 +115,22 @@ export default function Home() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                <div className={Styles.banner_left_2}>
+                <div
+                  className={`${Styles.banner_left_2} responsive-representation-left`}
+                >
                   <div className="about-page">
                     <Image
                       src={Presentation}
                       alt="ff"
                       priority
-                      className=" h-[600px] w-[500px]"
+                      className=" absolute p-[6rem] bottom-[-96px] "
                     />
                   </div>
                 </div>
 
-                <div className=" absolute top-[160px] right-0 rounded-md shadow-customeBrow  bg-customBlue">
+                <div className=" absolute top-[172px] right-0 rounded-md shadow-customeBrow  bg-customBlue responsive-years">
                   <div>
-                    <div className=" flex items-center p-[30px]">
+                    <div className=" flex items-center p-[30px] responsive-year-pds">
                       <Image
                         src={startup}
                         alt="startup"
@@ -146,7 +149,7 @@ export default function Home() {
                 </div>
               </motion.div>
             </div>
-            <div className=" content-column col-xl-6 col-lg-7 col-md-12 col-sm-12 order-lg-2 wow fadeInRight animated pl-70">
+            <div className=" col-md-6 col-lg-6 col-sm-12 relative pl-70">
               <motion.div
                 className="w-[100%]  rounded-lg mb-10"
                 initial={{ opacity: 0, y: 50 }}
@@ -154,13 +157,13 @@ export default function Home() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                <div className=" text-[16px] font-bold text-customBlue pb-4">
+                <div className=" text-[16px] font-bold text-customBlue pb-4 ">
                   WHO WE ARE _____
                 </div>
-                <div className=" text-[50px] font-bold leading-[60px] pb-5  mr-20 text-customBlackText">
+                <div className=" text-[50px] font-bold leading-[60px] pb-5  mr-20 text-customBlackText responsive-representation">
                   We provide best design Solution in town
                 </div>
-                <p className=" text-[16px]  font-normal text-customBrown leading-2 pb-4">
+                <p className=" text-[16px]  font-normal text-customBrown leading-2 pb-4 responsive-text-2">
                   We provide a diverse array of systems, each tailored to
                   streamline your operations and enhance productivity. Whether
                   you require assistance with data process automation need.
@@ -172,7 +175,7 @@ export default function Home() {
                       height={16}
                       className=" text-customBlue"
                     />{" "}
-                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor">
+                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor responsive-text">
                       Deliver Perfect Solution for business
                     </div>
                   </div>
@@ -182,7 +185,7 @@ export default function Home() {
                       height={16}
                       className=" text-customBlue"
                     />{" "}
-                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor">
+                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor responsive-text">
                       Deliver Perfect Solution for business
                     </div>
                   </div>
@@ -192,7 +195,7 @@ export default function Home() {
                       height={16}
                       className=" text-customBlue"
                     />{" "}
-                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor">
+                    <div className=" ml-2 font-medium text-[16px] text-lightTextColor responsive-text">
                       Deliver Perfect Solution for business
                     </div>
                   </div>
@@ -227,7 +230,7 @@ export default function Home() {
       </section>
       {/* Service */}
       <section className={`${Styles.card_bg} relative`}>
-        <div className=" absolute bottom-0">
+        <div className=" absolute bottom-0 ">
           <Image src={bgLayer} alt="bgLayer" priority />
         </div>
         <motion.div
@@ -237,8 +240,8 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className={Styles.service_dance_img}>
-            <Image src={SpringDance} alt="SpringDance" priority />
+          <div className={`${Styles.service_dance_img} dispaly-none`}>
+            <Image src={SpringDance} alt="SpringDance" priority className="" />
           </div>
         </motion.div>
 
@@ -404,7 +407,7 @@ export default function Home() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                <div className={Styles.card_custome}>
+                <div className={`${Styles.card_custome} z-20`}>
                   <div className={Styles.circle}>
                     <Image
                       src={device}
@@ -433,7 +436,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className={Styles.service_dance_img_right}>
+          <div className={`${Styles.service_dance_img_right} dispaly-none`}>
             <Image src={SpringDance} alt="SpringDance" priority />
           </div>
         </motion.div>
@@ -568,8 +571,9 @@ export default function Home() {
 
       <section>
         <div className=" py-5 client-marquee ">
-          <Marquee>
-            <div className={`${Styles.auto_container} flex items-center mx-5 `}>
+          {/* <Marquee> */}
+          <div className={`${Styles.auto_container} `}>
+            <div className="flex items-center justify-center">
               <div className="marquee-image-shadow">
                 <Image
                   src={Truefinedge}
@@ -601,78 +605,9 @@ export default function Home() {
                   className="marqu-box-shadow"
                 />
               </div>
-              <div className="marquee-image-shadow">
-                <Image
-                  src={Truefinedge}
-                  alt="client"
-                  priority
-                  width={200}
-                  height={200}
-                  className="marqu-box-shadow"
-                />
-              </div>
-              <div className="marquee-image-shadow">
-                <Image
-                  src={Truefinedge}
-                  alt="client"
-                  priority
-                  width={200}
-                  height={200}
-                  className="marqu-box-shadow"
-                />
-              </div>
-              <div className="marquee-image-shadow">
-                <Image
-                  src={Truefinedge}
-                  alt="client"
-                  priority
-                  width={200}
-                  height={200}
-                  className="marqu-box-shadow"
-                />
-              </div>
-              <div className="marquee-image-shadow">
-                <Image
-                  src={Truefinedge}
-                  alt="client"
-                  priority
-                  width={200}
-                  height={200}
-                  className="marqu-box-shadow"
-                />
-              </div>
-              <div className="marquee-image-shadow">
-                <Image
-                  src={Truefinedge}
-                  alt="client"
-                  priority
-                  width={200}
-                  height={200}
-                  className="marqu-box-shadow"
-                />
-              </div>
-              <div className="marquee-image-shadow">
-                <Image
-                  src={Truefinedge}
-                  alt="client"
-                  priority
-                  width={200}
-                  height={200}
-                  className="marqu-box-shadow"
-                />
-              </div>
-              <div className="marquee-image-shadow">
-                <Image
-                  src={Truefinedge}
-                  alt="client"
-                  priority
-                  width={200}
-                  height={200}
-                  className="marqu-box-shadow"
-                />
-              </div>
             </div>
-          </Marquee>
+          </div>
+          {/* </Marquee> */}
         </div>
       </section>
 

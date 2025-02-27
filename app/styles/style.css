@@ -52,19 +52,17 @@
 .client-marquee {
   background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 10px 30px;
+  /* padding: 10px; */
 }
 .marquee-image-shadow {
-  background: #fff;
   padding: 14px 10px;
-  margin-right: 5px;
 }
 .marqu-box-shadow {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 14px 20px;
   border-radius: 10px;
-  margin-right: 30px;
-  max-width: 140px !important;
+  /* margin-left: 15px; */
+  /* width: 10rem; */
 }
 
 @keyframes borderAnimation {
@@ -101,3 +99,38 @@
   align-items: center;
   z-index: 9;
 }
+
+
+.testimonials-circle-design-1 {
+    height: 150px;
+    left: -61px;
+  }
+  .testimonials-circle-design-2 {
+    height: 150px;
+    left: -61px;
+  }
+  .testimonials-circle-design-3 {
+    height: 150px;
+    right: -61px;
+  }
+  .testimonials-circle-design-4 {
+    height: 150px;
+    right: -61px;
+  }
+
+  .footer-circle-design-1 {
+    height: 150px;
+    left: -61px;
+  }
+  .footer-circle-design-2 {
+    height: 150px;
+    left: -59px;
+  }
+  .footer-circle-design-3 {
+    height: 150px;
+    right: -61px;
+  }
+  .footer-circle-design-4 {
+    height: 150px;
+    right: -59px;
+  }
