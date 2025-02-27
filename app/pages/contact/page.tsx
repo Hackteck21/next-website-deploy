@@ -16,14 +16,20 @@ const Contact = () => {
           <div className="text-[60px] font-extrabold text-white relative z-10">
             Contact
           </div>
-          <div className="text-white relative">
+          <div className="text-white relative flex items-center">
             Home{" "}
             <span>
-              <FontAwesomeIcon icon={faChevronCircleRight} className=" mx-2" />
+              <FontAwesomeIcon
+                icon={faChevronCircleRight}
+                className=" mx-2 h-[16px]"
+              />
             </span>
             Pages
             <span>
-              <FontAwesomeIcon icon={faChevronCircleRight} className=" mx-2" />
+              <FontAwesomeIcon
+                icon={faChevronCircleRight}
+                className=" mx-2 h-[16px]"
+              />
             </span>
             Contacts
           </div>
@@ -110,6 +116,7 @@ const Contact = () => {
                     <FontAwesomeIcon
                       icon={faPhone}
                       className={Styles.contact_phone}
+                      
                     />
                   </div>
                   <div className=" ml-10">

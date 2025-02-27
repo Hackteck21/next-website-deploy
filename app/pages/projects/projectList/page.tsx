@@ -11,14 +11,20 @@ const ProjectList = () => {
           <div className="text-[60px] font-extrabold text-white relative z-10">
             Projects
           </div>
-          <div className="text-white relative">
+          <div className="text-white relative flex items-center">
             Home{" "}
             <span>
-              <FontAwesomeIcon icon={faChevronCircleRight} className=" mx-2" />
+              <FontAwesomeIcon
+                icon={faChevronCircleRight}
+                className=" mx-2 h-[16px]"
+              />
             </span>
             Pages
             <span>
-              <FontAwesomeIcon icon={faChevronCircleRight} className=" mx-2" />
+              <FontAwesomeIcon
+                icon={faChevronCircleRight}
+                className=" mx-2 h-[16px]"
+              />
             </span>
             Project List
           </div>
@@ -116,7 +122,9 @@ const ProjectList = () => {
       </section> */}
       <section>
         <div className={Styles.auto_container}>
-          <h1 className=" text-center font-bold py-10 text-[30px]">Comeing Soon</h1>
+          <h1 className=" text-center font-bold py-10 text-[30px]">
+            Comeing Soon
+          </h1>
         </div>
       </section>
     </div>

@@ -26,19 +26,19 @@ const ProjectDetails = () => {
             <div className="text-[60px] font-extrabold text-white relative z-10">
               Project Details
             </div>
-            <div className="text-white relative">
+            <div className="text-white relative flex items-center">
               Home{" "}
               <span>
                 <FontAwesomeIcon
                   icon={faChevronCircleRight}
-                  className=" mx-2"
+                  className=" mx-2 h-[16px]"
                 />
               </span>
               Pages
               <span>
                 <FontAwesomeIcon
                   icon={faChevronCircleRight}
-                  className=" mx-2"
+                  className=" mx-2 h-[16px]"
                 />
               </span>
               Project Details
@@ -48,7 +48,10 @@ const ProjectDetails = () => {
       </section>
       <section className=" py-[80px]">
         <div className={Styles.auto_container}>
-          <img src="https://html.kodesolution.com/2024/sotech-php/images/resource/project-details.jpg" alt="ddd"/>
+          <img
+            src="https://html.kodesolution.com/2024/sotech-php/images/resource/project-details.jpg"
+            alt="ddd"
+          />
           <div className="row py-6">
             <div className="col-md-8 col-xl-8 col-lg-8">
               <motion.div

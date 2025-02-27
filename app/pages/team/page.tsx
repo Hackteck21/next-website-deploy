@@ -47,19 +47,19 @@ const TeamList = () => {
             <div className="text-[60px] font-extrabold text-white relative z-10">
               Team Grid
             </div>
-            <div className="text-white relative">
+            <div className="text-white relative flex items-center">
               Home{" "}
               <span>
                 <FontAwesomeIcon
                   icon={faChevronCircleRight}
-                  className=" mx-2"
+                  className=" mx-2 h-[16px]"
                 />
               </span>
               Pages
               <span>
                 <FontAwesomeIcon
                   icon={faChevronCircleRight}
-                  className=" mx-2"
+                  className=" mx-2 h-[16px]"
                 />
               </span>
               Team Grid

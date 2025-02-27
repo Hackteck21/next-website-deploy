@@ -3,7 +3,10 @@ import React from "react";
 import Styles from "../../styles/header.module.css";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronCircleRight, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronCircleRight,
+  faCircleCheck,
+} from "@fortawesome/free-solid-svg-icons";
 import { Profile, Startup } from "@/app/Icons/IconsExport";
 import Presentation from "../../assets/images/bg/presentation.jpg";
 import { motion } from "framer-motion";
@@ -23,19 +26,19 @@ const About = () => {
             <div className="text-[60px] font-extrabold text-white relative z-10">
               Abouts
             </div>
-            <div className="text-white relative">
+            <div className="text-white relative flex items-center">
               Home{" "}
               <span>
                 <FontAwesomeIcon
                   icon={faChevronCircleRight}
-                  className=" mx-2"
+                  className=" mx-2 h-[16px]"
                 />
               </span>
               Pages
               <span>
                 <FontAwesomeIcon
                   icon={faChevronCircleRight}
-                  className=" mx-2"
+                  className=" mx-2 h-[16px]"
                 />
               </span>
               Abouts

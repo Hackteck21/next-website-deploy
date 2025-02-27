@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Styles from "../../styles/header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Ellipse1 from "../../assets/images/bg/Ellipse-1.svg";
@@ -12,11 +14,56 @@ import {
   faPinterest,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faAddressBook, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAddressBook,
+  faArrowUp,
+  faEnvelope,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
+  const [showGoTop, setShowGoTop] = useState(false);
+
+  // const handleVisibleButton = () => {
+  //   setShowGoTop(window.pageYOffset > 50);
+  // };
+
+  // const handleScrollUp = () => {
+  //   window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleVisibleButton);
+  // }, []);
+
+  const handleVisibleButton = () => {
+    setShowGoTop(window.scrollY > 50); // ✅ Replaced pageYOffset with scrollY
+  };
+
+  const handleScrollUp = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleVisibleButton);
+
+    // Cleanup event listener
+    return () => {
+      window.removeEventListener("scroll", handleVisibleButton);
+    };
+  }, []);
+
   return (
     <section className="relative">
+      {showGoTop && (
+        <div
+          className="scroll-arrow-up cursor-pointer"
+          onClick={() => handleScrollUp()}
+        >
+          <FontAwesomeIcon icon={faArrowUp} className="text-white h-[16px]" />
+        </div>
+      )}
+
       <div>
         <div>
           <div>
