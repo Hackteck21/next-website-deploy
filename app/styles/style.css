@@ -1,6 +1,12 @@
 .slick-dots {
   bottom: -50px !important;
 }
+.header-layout{
+  min-height: 30px;
+}
+.header-layout li{
+  border-radius: 10px;
+}
 .our-client-overall {
   background-color: #fff;
   border-radius: 20px;

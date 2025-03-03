@@ -21,13 +21,15 @@ const Header = () => {
         <div className="row py-[10px]">
           <div className="col-md-4 pb-[16px]">
             <div className="">
-              <Image
-                src="https://uattfsec.truefinedge.com/image-pub/original.svg"
-                alt="logo"
-                width={200}
-                height={100}
-                priority
-              />
+              <Link href="/">
+                <Image
+                  src="https://uattfsec.truefinedge.com/image-pub/original.svg"
+                  alt="logo"
+                  width={200}
+                  height={100}
+                  priority
+                />
+              </Link>
             </div>
           </div>
           <div className="col-md-8 flex justify-center items-center">
@@ -72,7 +74,7 @@ const Header = () => {
                 )}
                 {isDropdownOpen && (
                   <ul
-                    className="absolute left-[-24px] top-10  w-[16rem] bg-white shadow-lg rounded-[10px] z-50 p-[0]"
+                    className="absolute left-[-24px] top-10  w-[16rem] bg-white shadow-lg rounded-[10px] z-50 p-[0] header-layout"
                     onMouseEnter={() => setIsDropdownOpen(true)}
                     onMouseLeave={() => setIsDropdownOpen(false)}
                   >
@@ -80,19 +82,13 @@ const Header = () => {
                       <Link
                         href="/pages/about"
                         className="block px-4 py-2 text-gray-700 hover:text-customBlue no-underline font-medium"
-                        // onClick={() => setIsDropdownOpen(false)}
+                        // onClick={() => {
+                        //   setIsDropdownOpen(false);
+                        //   router.push("/pages/about");
+                        // }}
                       >
                         About
                       </Link>
-                      {/* <button
-                        className="block w-full text-left px-4 py-2 text-gray-700 hover:text-customBlue no-underline font-medium"
-                        onClick={() => {
-                          setIsDropdownOpen(false);
-                           window.location.href = "/pages/about"; // Instant redirect
-                        }}
-                      >
-                        About
-                      </button> */}
                     </li>
 
                     <li
@@ -116,7 +112,7 @@ const Header = () => {
                       )}
                       {projectDropDownOpen && (
                         <ul
-                          className="absolute left-[220px] top-10  w-[14rem] bg-white shadow-lg rounded-md z-50 p-[0]"
+                          className="absolute left-[220px] top-10  w-[14rem] bg-white shadow-lg rounded-md z-50 p-[0] header-layout"
                           onMouseEnter={() => setProjectDropDownOpen(true)}
                           onMouseLeave={() => setProjectDropDownOpen(false)}
                         >

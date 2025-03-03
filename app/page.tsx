@@ -23,6 +23,7 @@ import Slider from "react-slick";
 import Testimonials from "./pages/testimonials/page";
 import bgLayer from "./assets/images/bg/Element.svg";
 
+
 export default function Home() {
   const settings = {
     dots: false,
@@ -34,6 +35,8 @@ export default function Home() {
     autoplaySpeed: 3000,
     arrows: false,
   };
+
+
   return (
     <div>
       <motion.div
